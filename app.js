@@ -19,14 +19,12 @@
             news: "Жаңылыктар",
             contact: "Байланыш",
             apply: "Стипендияга тапшыруу",
-            demoBanner: "Демо режим: бардык көрсөткүчтөр жана маалыматтар үлгү катары гана берилген. Расмий маалыматтар азырынча кошула элек.",
             heroEyebrow: "Билим. Өнүгүү. Коомго салым.",
             heroTitle: "Бүгүнкү мүмкүнчүлүк — эртеңки чоң из.",
             heroText: "Из Калтыр — жаштардын билим алуусуна, өнүгүүсүнө жана коомго салым кошуусуна жол ачкан стипендиялык демилге.",
             learnScholarship: "Стипендия жөнүндө",
-            ourImpact: "Биздин таасирибиз",
-            photoNote: "Иллюстрациялык сүрөт · уюмдун расмий сүрөтү эмес",
-            photoAlt: "Окуу жайында бирге иштеп жаткан студенттер. Иллюстрациялык сүрөт, уюмга тиешеси жок.",
+            ourImpact: "Биздин таасирибиз", 
+            photoAlt: "Тоолордун сүрөтү жана Из Калтыр стипендиялык программасынын логотиби түшүрүлгөн баннер.",
             statsEyebrow: "Биздин көрсөткүчтөр",
             statsTitle: "Ар бир мүмкүнчүлүк маанилүү",
             statsNote: "Стипендиаттар жана иш-чаралар жарыяланган жазуулардан, өнөктөштөр көрүнүктүү жазуулардан, ыктыярчылар активдүү жазуулардан эсептелет. Азырынча расмий маалымат жок.",
@@ -120,6 +118,7 @@
             emptyScholars: "Азырынча жарыяланган стипендиаттар жок.",
             emptySponsors: "Расмий өнөктөштөр азырынча жарыялана элек.",
             emptyTeam: "Команда мүчөлөрү тууралуу текшерилген маалымат азырынча жок.",
+            emptyVolunteers: "Ыктыярчылар тууралуу маалымат азырынча жарыялана элек.",
             emptyNews: "Азырынча жарыяланган жаңылыктар жок.",
             emptyStories: "Азырынча жарыяланган окуялар жок.",
             emptyEvents: "Иш-чаралар кийин жарыяланат.",
@@ -180,8 +179,8 @@
             heroText: "«Из Калтыр» — стипендиальная инициатива, которая помогает молодёжи получать образование, развиваться и вносить вклад в общество.",
             learnScholarship: "О стипендии",
             ourImpact: "Наш вклад",
-            photoNote: "Иллюстративное фото · не официальное фото организации",
-            photoAlt: "Студенты вместе занимаются в учебном пространстве. Иллюстративное фото, не связанное с организацией.",
+            photoNote: "Официальный баннер с логотипом организации и стипендиальной программой.",
+            photoAlt: "Баннер с изображением гор и логотипом стипендиальной программы «Из Калтыр».",
             statsEyebrow: "Наши показатели",
             statsTitle: "Каждая возможность важна",
             statsNote: "Стипендиаты и мероприятия считаются по опубликованным записям, партнёры — по видимым, волонтёры — по активным записям. Проверенных данных пока нет.",
@@ -275,6 +274,7 @@
             emptyScholars: "Опубликованных профилей стипендиатов пока нет.",
             emptySponsors: "Официальные партнёры пока не представлены.",
             emptyTeam: "Проверенная информация о команде пока не добавлена.",
+            emptyVolunteers: "Информация о волонтёрах пока не опубликована.",
             emptyNews: "Опубликованных новостей пока нет.",
             emptyStories: "Опубликованных историй пока нет.",
             emptyEvents: "Информация о мероприятиях появится позже.",
@@ -335,8 +335,8 @@
             heroText: "Iz Kaltyr is a scholarship initiative that supports young people in learning, growing, and contributing to their communities.",
             learnScholarship: "About the scholarship",
             ourImpact: "Our impact",
-            photoNote: "Illustrative photo · not an official organization photo",
-            photoAlt: "Students working together in a study space. Illustrative photo, not affiliated with the organization.",
+            photoNote: "Official banner featuring the organization logo and scholarship program.",
+            photoAlt: "Banner with a mountain scene and the Iz Kaltyr scholarship program logo.",
             statsEyebrow: "Our impact",
             statsTitle: "Every opportunity matters",
             statsNote: "Scholars and events count published records, partners count visible records, and volunteers count active records. No verified records have been added yet.",
@@ -430,6 +430,7 @@
             emptyScholars: "No scholar profiles have been published yet.",
             emptySponsors: "No official partners have been listed yet.",
             emptyTeam: "Verified team information has not been added yet.",
+            emptyVolunteers: "Volunteer information has not been published yet.",
             emptyNews: "No news articles have been published yet.",
             emptyStories: "No stories have been published yet.",
             emptyEvents: "Event details will be shared later.",
@@ -536,7 +537,7 @@
             <div class="demo-banner" role="note">${t("demoBanner")}</div>
             <header class="site-header">
               <div class="container header-inner">
-                ${link("home", '<span class="brand-mark" aria-hidden="true">И</span><span>Из Калтыр</span>', "brand")}
+                ${link("home", '<img class="brand-logo" src="public/images/logo.jpeg" alt=""><span>Из Калтыр</span>', "brand")}
                 <button class="menu-toggle" type="button" aria-expanded="${state.menuOpen}" aria-controls="primary-navigation" aria-label="${state.menuOpen ? t("menuClose") : t("menuOpen")}">
                   <span></span><span></span><span></span>
                 </button>
@@ -559,7 +560,7 @@
           <footer class="site-footer">
             <div class="container footer-grid">
               <div class="footer-brand">
-                ${link("home", '<span class="brand-mark" aria-hidden="true">И</span><span>Из Калтыр</span>', "brand brand-light")}
+                ${link("home", '<img class="brand-logo" src="public/images/logo.jpeg" alt=""><span>Из Калтыр</span>', "brand brand-light")}
                 <p>${t("footerDescription")}</p>
               </div>
               <div><h2>${t("about")}</h2><ul>
@@ -614,7 +615,7 @@
                 <div class="hero-actions">${link("scholarship", t("learnScholarship"), "button button-orange")}${link("home#impact", t("ourImpact"), "button button-ghost")}</div>
               </div>
               <figure class="hero-visual">
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85" alt="${t("photoAlt")}" fetchpriority="high">
+                <img src="public/images/iz-kartyr.jpeg" alt="${t("photoAlt")}" fetchpriority="high" decoding="async">
                 <figcaption>${t("photoNote")}</figcaption>
                 <span class="hero-accent" aria-hidden="true"></span>
               </figure>
@@ -706,7 +707,27 @@
     function eventsList() {
         const events = data.records.events.filter((event) => event.published && !event.deleted);
         if (!events.length) return emptyState("emptyEvents", "✳");
-        return `<div class="card-grid">${events.map((event) => `<article class="news-card"><p class="eyebrow">${escapeHtml(recordText(event, "date") || t("datePending"))}</p><h3>${escapeHtml(recordText(event, "title"))}</h3><p>${escapeHtml(recordText(event, "description"))}</p></article>`).join("")}</div>`;
+        return `<div class="card-grid">${events.map((event) => {
+            const title = recordText(event, "title");
+            const image = externalUrl(event.image);
+            const visual = image
+                ? `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(event, "imageAlt") || title)}" loading="lazy" decoding="async">`
+                : `<div class="event-placeholder" aria-hidden="true">✳</div>`;
+            return `<article class="news-card">${visual}<p class="eyebrow">${escapeHtml(recordText(event, "date") || t("datePending"))}</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(recordText(event, "description"))}</p></article>`;
+        }).join("")}</div>`;
+    }
+
+    function volunteerCards() {
+        const volunteers = data.records.volunteers.filter((volunteer) => volunteer.active && !volunteer.deleted);
+        if (!volunteers.length) return emptyState("emptyVolunteers", "✳");
+        return `<div class="card-grid">${volunteers.map((volunteer) => {
+            const photo = externalUrl(volunteer.photo);
+            const name = recordText(volunteer, "name");
+            const image = photo
+                ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(volunteer, "photoAlt") || name)}" loading="lazy" decoding="async">`
+                : `<div class="person-placeholder" aria-hidden="true">И</div>`;
+            return `<article class="person-card">${image}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(volunteer, "position"))}</p><p>${escapeHtml(recordText(volunteer, "biography"))}</p></article>`;
+        }).join("")}</div>`;
     }
 
     function volunteerCallout() {
@@ -790,7 +811,7 @@
             ? `<div class="card-grid">${members.map((member) => {
                 const photo = externalUrl(member.photo);
                 const name = recordText(member, "name");
-                return `<article class="person-card">${photo ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(member, "photoAlt") || `${name} — ${recordText(member, "position")}`)}" loading="lazy">` : `<div class="person-placeholder" aria-hidden="true">И</div>`}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(member, "position"))}</p><p>${escapeHtml(recordText(member, "biography"))}</p></article>`;
+                return `<article class="person-card">${photo ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(member, "photoAlt") || `${name} — ${recordText(member, "position")}`)}" loading="lazy" decoding="async">` : `<div class="person-placeholder" aria-hidden="true">И</div>`}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(member, "position"))}</p><p>${escapeHtml(recordText(member, "biography"))}</p></article>`;
             }).join("")}</div>`
             : emptyState("emptyTeam", "✳");
         const hasDirector = members.some((member) => member.role === "director");
@@ -834,7 +855,7 @@
             const photo = externalUrl(scholar.photo);
             const name = recordText(scholar, "name");
             const image = photo
-                ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(scholar, "photoAlt") || name)}" loading="lazy">`
+                ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(scholar, "photoAlt") || name)}" loading="lazy" decoding="async">`
                 : `<div class="person-placeholder" aria-hidden="true">И</div>`;
             return `<article class="person-card">${image}<p class="eyebrow">${escapeHtml(String(scholar.year || ""))}</p><h2>${escapeHtml(name)}</h2><p>${escapeHtml(recordText(scholar, "university"))}</p><p>${escapeHtml(recordText(scholar, "field"))}</p>${link(`scholar/${encodeURIComponent(scholar.id)}`, t("readStory"), "text-link")}</article>`;
         }).join("")}</div>`;
@@ -871,7 +892,7 @@
     function volunteersPage() {
         return `${pageIntro("volunteerEyebrow", "volunteerTitle", "volunteerText")}
           <section class="section section-muted"><div class="container split-layout">
-            <div><h2>${t("volunteers")}</h2>${eventsList()}</div>
+            <div><h2>${t("volunteers")}</h2>${volunteerCards()}<h2>${t("statEvents")}</h2>${eventsList()}</div>
             <div id="volunteer-form-section">${contactForm("volunteer", "volunteerFormTitle")}</div>
           </div></section>`;
     }
