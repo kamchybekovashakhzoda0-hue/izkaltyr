@@ -63,10 +63,10 @@
             details: "Толук маалымат",
             readStory: "Окуяны окуу",
             directorPlaceholder: "[Абдыманап Бахтиержанов]",
-            directorPending: ""
+            directorPending: "Күрөш федерациясынын мүчө.",
             scholarsEyebrow: "Биздин коомчулук",
             scholarsTitle: "Стипендиаттар",
-            scholarsText: "Стипендиаттар тууралуу маалымат",
+            scholarsText: "Стипендиаттар тууралуу маалымат алгач алардын уруксаты жана уюмдун ырастоосу менен жарыяланат.",
             allScholars: "Бардык стипендиаттар",
             storiesEyebrow: "Окуялар",
             storiesTitle: "Маанилүү өзгөрүүлөр адамдан башталат",
