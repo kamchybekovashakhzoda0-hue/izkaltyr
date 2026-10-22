@@ -2,7 +2,20 @@
     "use strict";
 
     const records = {
-        scholars: [],
+        scholars: [
+            {
+                id: "scholar-1",
+                name: "Момунбаев Диннур",
+                cohort: "second",
+                profileImage: "диннур.jpg",
+                profileImageAlt: "Момунбаев Диннур",
+                profileImageCaption: "Момунбаев Диннур",
+                profileImageCaptionAlt: "Момунбаев Диннур",
+                university: "И.Араев атындагы Кыргыз мамлекеттик университети",
+                profileText: "Момунбаев Диннур 2026-жылы «Из Калтыр» долбоорунун экинчи агымында стипендия алган. Ал билимге болгон кызыгуусу жана коомдук ишмердүүлүгү менен белгилүү."    
+
+            }
+        ],
         sponsors: [],
         volunteers: [],
         events: [],

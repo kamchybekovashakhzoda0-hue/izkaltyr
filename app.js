@@ -535,7 +535,6 @@
             organizationLabel: "Organization / company",
             interestLabel: "Briefly describe your interest",
             submitInterest: "Submit inquiry",
-            formDemoNotice: "Demo form: your input was validated but was not sent or saved. A backend service is required for real submissions.",
             emptyScholars: "No scholar profiles have been published yet.",
             emptySponsors: "No official partners have been listed yet.",
             emptyTeam: "Verified team information has not been added yet.",
