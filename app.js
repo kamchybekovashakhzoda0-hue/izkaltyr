@@ -77,20 +77,14 @@
             noApplication: "Кийинки кабыл алууга тапшыруу шилтемеси документте жок.",
             details: "Толук маалымат",
             readStory: "Окуяны окуу",
-            founderName: "Абдыманап Бахтиержанов",
-            founderRole: "«Из Калтыр» долбоорунун негиздөөчүсү жана башкы демөөрчүсү; Жалал-Абад облусунун күрөш федерациясынын президенти; күрөш федерациясынын мүчөсү; MB Sport брендинин негиздөөчүсү.",
-            founderIntro: "PDF документинде көрсөтүлгөн негиздөөчүнүн билим жолу жана ишмердиги:",
-            founder2012: "Бишкек шаарындагы №16 мектеп",
-            founder2014: "Кастамону университети, түрк тили",
-            founder2016: "Кыргыз-Кытай улуттук университети",
-            founder2016to2020: "Шанхай педагогикалык университети, магистратура",
-            founder2020Study: "Малайзияда тил курсу",
-            founder2020Work: "MB Sport бренди негизделген",
-            founder2024to2026: "Кыргыз улуттук университети, эл аралык кытай экономикасы багыты",
-            founderSince2024: "Аманат жаш мамлекетчилдер мектебинин демөөрчүсү",
-            founderSinceLabel: "2024-жылдан тартып",
-            founder2025: "Күрөш федерациясынын мүчөсү",
-            founder2026: "«Из Калтыр» стипендиялык долбоорунун негиздөөчүсү жана башкы демөөрчүсү",
+            directorEyebrow: "Долбоордун негиздөөчүсү",
+            directorSectionTitle: "Негиздөөчү жөнүндө",
+            directorPhotoAlt: "Абдуманап Бахтиержановдун сүрөтү",
+            directorRoleLabel: "Негиздөөчү жана башкы демөөрчү",
+            directorPositions: "Расмий кызматтары",
+            directorEducation: "Билим алуу жолу",
+            directorClarificationTitle: "Тактоону талап кылган маалымат",
+            directorClarification: "Окуунун аяктаганы, ыйгарылган даражалар же квалификациялар ырасталган эмес. Кесиптик тажрыйба жана жетишкендиктер тууралуу маалымат берилген эмес. Кыргыз улуттук университетиндеги 2024–2026-жылдардагы окуунун учурдагы макамын тактоо керек.",
             cohortsEyebrow: "Долбоордун агымдары",
             cohortsTitle: "Биринчи кадамдан жаңы башталышка чейин",
             cohortFirstTitle: "1-агым",
@@ -269,20 +263,14 @@
             noApplication: "Ссылка для подачи заявки на следующий набор в документе отсутствует.",
             details: "Подробнее",
             readStory: "Читать историю",
-            founderName: "Абдыманап Бахтиержанов",
-            founderRole: "Основатель и главный спонсор проекта «Из Калтыр»; президент федерации борьбы Жалал-Абадской области; член федерации борьбы; основатель бренда MB Sport.",
-            founderIntro: "Образование и деятельность основателя по материалам PDF:",
-            founder2012: "Школа № 16 в Бишкеке",
-            founder2014: "Университет Кастамону, турецкий язык",
-            founder2016: "Кыргызско-Китайский национальный университет",
-            founder2016to2020: "Шанхайский педагогический университет, магистратура",
-            founder2020Study: "Языковой курс в Малайзии",
-            founder2020Work: "Основан бренд MB Sport",
-            founder2024to2026: "Кыргызский национальный университет, направление «международная китайская экономика»",
-            founderSince2024: "Спонсор школы молодых государственников «Аманат»",
-            founderSinceLabel: "С 2024 года",
-            founder2025: "Член федерации борьбы",
-            founder2026: "Основатель и главный спонсор стипендиального проекта «Из Калтыр»",
+            directorEyebrow: "Основатель проекта",
+            directorSectionTitle: "Об основателе",
+            directorPhotoAlt: "Фотография Абдуманапа Бахтиержанова",
+            directorRoleLabel: "Основатель и главный спонсор",
+            directorPositions: "Официальные должности",
+            directorEducation: "Образование",
+            directorClarificationTitle: "Данные, требующие уточнения",
+            directorClarification: "Завершение обучения, присвоенные степени и квалификации не подтверждены. Сведения о профессиональном опыте и достижениях не предоставлены. Необходимо уточнить текущий статус обучения в Кыргызском национальном университете в период 2024–2026 годов.",
             cohortsEyebrow: "Потоки проекта",
             cohortsTitle: "От первого шага к новому началу",
             cohortFirstTitle: "1-й поток",
@@ -461,20 +449,14 @@
             noApplication: "The document does not include a link for the next application period.",
             details: "Learn more",
             readStory: "Read story",
-            founderName: "Abdymanap Bakhtierjanov",
-            founderRole: "Founder and main sponsor of the Iz Kaltyr project; president of the Jalal-Abad regional wrestling federation; member of the wrestling federation; founder of the MB Sport brand.",
-            founderIntro: "The founder's education and work history, as stated in the PDF:",
-            founder2012: "School No. 16 in Bishkek",
-            founder2014: "Kastamonu University, Turkish language",
-            founder2016: "Kyrgyz-Chinese National University",
-            founder2016to2020: "Shanghai Normal University, master's studies",
-            founder2020Study: "Language course in Malaysia",
-            founder2020Work: "MB Sport brand founded",
-            founder2024to2026: "Kyrgyz National University, international Chinese economy program",
-            founderSince2024: "Sponsor of the Amanat School of Young Statesmen",
-            founderSinceLabel: "Since 2024",
-            founder2025: "Member of the wrestling federation",
-            founder2026: "Founder and main sponsor of the Iz Kaltyr scholarship project",
+            directorEyebrow: "Project founder",
+            directorSectionTitle: "Meet the founder",
+            directorPhotoAlt: "Photograph of Абдуманап Бахтиержанов",
+            directorRoleLabel: "Founder and main sponsor",
+            directorPositions: "Official roles",
+            directorEducation: "Education timeline",
+            directorClarificationTitle: "Details to confirm",
+            directorClarification: "Completion of studies, awarded degrees, and qualifications have not been confirmed. No information about professional experience or achievements was provided. The current status of the 2024–2026 studies at Kyrgyz National University should be clarified.",
             cohortsEyebrow: "Project cohorts",
             cohortsTitle: "From the first step to a new beginning",
             cohortFirstTitle: "Cohort 1",
@@ -584,18 +566,6 @@
     const statKeys = ["firstCohort", "secondCohort", "scholarshipRecipients", "volunteers"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
-    const founderTimeline = [
-        ["2012", "founder2012"],
-        ["2014", "founder2014"],
-        ["2016", "founder2016"],
-        ["2016–2020", "founder2016to2020"],
-        ["2020", "founder2020Study"],
-        ["2020", "founder2020Work"],
-        ["founderSinceLabel", "founderSince2024"],
-        ["2024–2026", "founder2024to2026"],
-        ["2025", "founder2025"],
-        ["2026", "founder2026"]
-    ];
     const state = {
         language: localStorage.getItem("iz-kaltyr-language") || "ky",
         menuOpen: false,
@@ -922,8 +892,32 @@
         </div></section>`;
     }
 
+    function directorProfileSection() {
+        const profile = data.directorProfile;
+        const localized = profile.languages[state.language];
+        return `<section class="section director-section" aria-labelledby="director-section-title">
+          <div class="container">
+            <div class="section-heading"><p class="eyebrow">${t("directorEyebrow")}</p><h2 id="director-section-title">${t("directorSectionTitle")}</h2></div>
+            <div class="director-profile">
+              <figure class="director-photo"><img src="${escapeHtml(profile.image)}" alt="${escapeHtml(t("directorPhotoAlt"))}" loading="lazy" decoding="async"></figure>
+              <div class="director-details">
+                <p class="eyebrow">${t("directorRoleLabel")}</p><h3 id="director-name">${escapeHtml(localized.name)}</h3>
+                <p class="director-biography">${escapeHtml(localized.biography)}</p>
+                <h4 class="director-subheading">${t("directorPositions")}</h4>
+                <ul class="director-role-list">${localized.roles.map((role) => `<li>${escapeHtml(role)}</li>`).join("")}</ul>
+              </div>
+            </div>
+            <div class="director-education">
+              <h3>${t("directorEducation")}</h3>
+              <ol class="founder-timeline">${localized.education.map(({ year, institution }) => `<li><time>${escapeHtml(year)}</time><span>${escapeHtml(institution)}</span></li>`).join("")}</ol>
+            </div>
+            <aside class="director-clarification"><h3>${t("directorClarificationTitle")}</h3><p>${t("directorClarification")}</p></aside>
+          </div>
+        </section>`;
+    }
+
     function aboutPage() {
-        return `${pageIntro("aboutEyebrow", "aboutTitle", "aboutText")}${aboutPreview()}<section class="section section-muted"><div class="container"><p class="eyebrow">${t("historyLabel")}</p><h2>${t("historyLabel")}</h2><p class="lead">${t("historyPending")}</p></div></section>${storiesSection()}${teamSection()}`;
+        return `${pageIntro("aboutEyebrow", "aboutTitle", "aboutText")}${aboutPreview()}<section class="section section-muted"><div class="container"><p class="eyebrow">${t("historyLabel")}</p><h2>${t("historyLabel")}</h2><p class="lead">${t("historyPending")}</p></div></section>${directorProfileSection()}${storiesSection()}${teamSection()}`;
     }
 
     function scholarshipPage() {
@@ -954,11 +948,7 @@
                 return `<article class="person-card">${photo ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(member, "photoAlt") || `${name} — ${recordText(member, "position")}`)}" loading="lazy" decoding="async">` : `<div class="person-placeholder" aria-hidden="true">И</div>`}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(member, "position"))}</p><p>${escapeHtml(recordText(member, "biography"))}</p></article>`;
             }).join("")}</div>`
             : emptyState("emptyTeam", "✳");
-        const founder = `<section class="section"><div class="container founder-layout">
-          <div><p class="eyebrow">${t("team")}</p><h2>${t("founderName")}</h2><p class="lead">${t("founderRole")}</p></div>
-          <div><h3>${t("founderIntro")}</h3><ol class="founder-timeline">${founderTimeline.map(([year, key]) => `<li><time>${year === "founderSinceLabel" ? t(year) : year}</time><span>${t(key)}</span></li>`).join("")}</ol></div>
-        </div></section>`;
-        return `${founder}<section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">${t("team")}</p><h2>${t("team")}</h2></div>${profiles}</div></section>`;
+        return `<section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">${t("team")}</p><h2>${t("team")}</h2></div>${profiles}</div></section>`;
     }
 
     function directoryPage() {

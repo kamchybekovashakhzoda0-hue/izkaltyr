@@ -945,28 +945,81 @@ h3 {
   font-weight: 800;
 }
 
-.director-placeholder {
-  max-width: 560px;
-  margin-bottom: 24px;
-  padding: 24px;
+.director-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(38px, 6vw, 82px);
+}
+
+.director-photo {
+  margin: 0;
+  padding: 12px;
+  background: #FFF0E4;
+  box-shadow: var(--shadow);
+}
+
+.director-photo img {
+  width: 100%;
+  height: auto;
+  background: #E8EDF3;
+}
+
+.director-details {
+  padding-top: 8px;
+}
+
+.director-details h3 {
+  margin-bottom: 18px;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.director-biography {
+  max-width: 650px;
+  color: var(--muted);
+}
+
+.director-subheading {
+  margin-top: 28px;
+}
+
+.director-role-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.director-role-list li {
+  padding: 10px 14px;
+  border-left: 3px solid var(--orange);
+  color: var(--navy);
+  background: var(--surface);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.director-education {
+  max-width: 900px;
+  margin-top: 48px;
+}
+
+.director-clarification {
+  max-width: 900px;
+  margin-top: 32px;
+  padding: 20px 24px;
   border-left: 3px solid var(--orange);
   background: var(--surface);
 }
 
-.director-placeholder p {
+.director-clarification h3 {
+  margin-bottom: 8px;
+}
+
+.director-clarification p {
   margin-bottom: 0;
   color: var(--muted);
-}
-
-.founder-layout {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  align-items: start;
-  gap: clamp(38px, 7vw, 90px);
-}
-
-.founder-layout h2 {
-  overflow-wrap: anywhere;
 }
 
 .founder-timeline {
@@ -1236,9 +1289,12 @@ h3 {
   .scholarship-panel,
   .contact-layout,
   .split-layout,
-  .faq-layout,
-  .founder-layout {
+  .faq-layout {
     gap: 42px;
+  }
+
+  .director-profile {
+    gap: 32px;
   }
 
   .filter-bar {
@@ -1270,9 +1326,26 @@ h3 {
   .scholarship-detail-layout,
   .contact-layout,
   .split-layout,
-  .faq-layout,
-  .founder-layout {
+  .faq-layout {
     grid-template-columns: 1fr;
+  }
+
+  .director-profile {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .director-photo {
+    width: min(100%, 480px);
+  }
+
+  .director-education {
+    margin-top: 34px;
+  }
+
+  .founder-timeline li {
+    grid-template-columns: minmax(86px, 0.3fr) 1fr;
+    gap: 12px;
   }
 
   .hero-grid {
