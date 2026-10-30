@@ -893,6 +893,7 @@
     }
 
     function directorProfileSection() {
+        
         const profile = data.directorProfile;
         const localized = profile.languages[state.language];
         return `<section class="section director-section" aria-labelledby="director-section-title">
