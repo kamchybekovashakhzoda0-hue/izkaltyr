@@ -13,10 +13,13 @@
             about: "Биз жөнүндө",
             scholarship: "Стипендия",
             team: "Команда",
+            leadership: "Жетекчилик",
             scholars: "Стипендиаттар",
             volunteers: "Ыктыярчылар",
             sponsors: "Өнөктөштөр",
             news: "Жаңылыктар",
+            events: "Иш-чаралар",
+            gallery: "Сүрөт галереясы",
             contact: "Байланыш",
             apply: "Стипендияга тапшыруу",
             heroEyebrow: "Билим. Өнүгүү. Мүмкүнчүлүк.",
@@ -115,8 +118,8 @@
             studentUniversityLabel: "Окуу жайы",
             studentCohortLabel: "Агым",
             studentLanguagesLabel: "Тилдер",
-            photoUnavailable: "Сүрөт жеткиликтүү эмес",
             emptyStudents: "Студенттер тууралуу маалымат азырынча жок.",
+            studentNoResults: "Бул ат боюнча студенттер табылган жок.",
             allStudents: "Бардык студенттер",
             allScholars: "Бардык стипендиаттар",
             storiesEyebrow: "Окуялар",
@@ -132,8 +135,41 @@
             becomeVolunteer: "Ыктыярчы болуу",
             newsEyebrow: "Жаңылыктар жана иш-чаралар",
             newsTitle: "Акыркы жаңылыктар",
-            newsText: "Расмий жарыялар даяр болгондо бул жерде бөлүшүлөт.",
+            newsText: "Долбоордун жаңылыктары жана жарыялары.",
             allNews: "Бардык жаңылыктар",
+            readMore: "Толугураак окуу",
+            leadershipEyebrow: "Из Калтыр командасы",
+            leadershipTitle: "Долбоордун жетекчилиги",
+            leadershipText: "Из Калтыр долбоорунун жетекчилери.",
+            leaderPresident: "Из Калтыр долбоорунун президенти",
+            leaderFirstCohort: "1-агымдын жетекчиси",
+            leaderSecondCohort: "2-агымдын жетекчиси",
+            leaderBiography: "Кыскача өмүр баяны",
+            leaderBackground: "Кесиптик тажрыйбасы",
+            leaderAchievements: "Жетишкендиктери жана ишмердиги",
+            leaderResponsibilities: "Долбоордогу жоопкерчиликтери",
+            galleryEyebrow: "Долбоордун көз ирмемдери",
+            galleryTitle: "Сүрөт галереясы",
+            galleryText: "Из Калтыр долбоорунун иш-чараларынан сүрөттөр.",
+            galleryAll: "Бардык сүрөттөр",
+            galleryActivities: "Долбоордук иш-чаралар",
+            galleryMeetings: "Жолугушуулар",
+            galleryGatherings: "Студенттердин жолугушуулары",
+            galleryEducation: "Билим берүү иш-чаралары",
+            galleryMoments: "Өзгөчө көз ирмемдер",
+            galleryOpen: "Сүрөттү чоңойтуу",
+            galleryClose: "Жабуу",
+            eventsEyebrow: "Из Калтыр долбоору",
+            eventsTitle: "Иш-чаралар",
+            eventsText: "Долбоордун алдыдагы жана өткөн иш-чаралары.",
+            upcomingEvents: "Алдыдагы иш-чаралар",
+            completedEvents: "Өткөн иш-чаралар",
+            eventDate: "Күнү",
+            eventLocation: "Өткөрүлүүчү жери",
+            eventCategory: "Категория",
+            eventUpcoming: "Алдыда",
+            eventCompleted: "Өткөрүлдү",
+            eventDetails: "Иш-чара тууралуу",
             faqEyebrow: "Көп берилүүчү суроолор",
             faqTitle: "Сурооңуз барбы?",
             faqDraft: "Жооптор долбоор тууралуу PDF материалындагы маалыматка негизделет.",
@@ -218,10 +254,13 @@
             about: "О нас",
             scholarship: "Стипендия",
             team: "Команда",
+            leadership: "Руководство",
             scholars: "Стипендиаты",
             volunteers: "Волонтёры",
             sponsors: "Партнёры",
             news: "Новости",
+            events: "Мероприятия",
+            gallery: "Фотогалерея",
             contact: "Контакты",
             apply: "Подать заявку",
             demoBanner: "Факты о проекте взяты из PDF; сроки и порядок следующего набора в документе не указаны.",
@@ -319,8 +358,41 @@
             becomeVolunteer: "Стать волонтёром",
             newsEyebrow: "Новости и события",
             newsTitle: "Последние новости",
-            newsText: "Официальные объявления появятся здесь, когда будут готовы.",
+            newsText: "Новости и объявления проекта.",
             allNews: "Все новости",
+            readMore: "Читать далее",
+            leadershipEyebrow: "Команда «Из Калтыр»",
+            leadershipTitle: "Руководство проекта",
+            leadershipText: "Руководители проекта «Из Калтыр».",
+            leaderPresident: "Президент проекта «Из Калтыр»",
+            leaderFirstCohort: "Руководитель 1-го потока",
+            leaderSecondCohort: "Руководитель 2-го потока",
+            leaderBiography: "Краткая биография",
+            leaderBackground: "Профессиональный опыт",
+            leaderAchievements: "Достижения и деятельность",
+            leaderResponsibilities: "Обязанности в проекте",
+            galleryEyebrow: "Моменты проекта",
+            galleryTitle: "Фотогалерея",
+            galleryText: "Фотографии мероприятий проекта «Из Калтыр».",
+            galleryAll: "Все фотографии",
+            galleryActivities: "Проектные мероприятия",
+            galleryMeetings: "Встречи",
+            galleryGatherings: "Студенческие встречи",
+            galleryEducation: "Образовательные мероприятия",
+            galleryMoments: "Особые моменты",
+            galleryOpen: "Открыть фотографию",
+            galleryClose: "Закрыть",
+            eventsEyebrow: "Проект «Из Калтыр»",
+            eventsTitle: "Мероприятия",
+            eventsText: "Предстоящие и прошедшие мероприятия проекта.",
+            upcomingEvents: "Предстоящие мероприятия",
+            completedEvents: "Прошедшие мероприятия",
+            eventDate: "Дата",
+            eventLocation: "Место проведения",
+            eventCategory: "Категория",
+            eventUpcoming: "Предстоит",
+            eventCompleted: "Завершено",
+            eventDetails: "О мероприятии",
             faqEyebrow: "Частые вопросы",
             faqTitle: "Остались вопросы?",
             faqDraft: "Ответы основаны на сведениях о проекте из PDF-документа.",
@@ -378,8 +450,8 @@
             studentUniversityLabel: "Учебное заведение",
             studentCohortLabel: "Поток",
             studentLanguagesLabel: "Языки",
-            photoUnavailable: "Фотография недоступна",
             emptyStudents: "Информация о студентах пока отсутствует.",
+            studentNoResults: "Студенты с таким именем не найдены.",
             allStudents: "Все студенты",
             yearFilter: "Год стипендии",
             universityFilter: "Вуз",
@@ -424,10 +496,13 @@
             about: "About Us",
             scholarship: "Scholarship",
             team: "Our Team",
+            leadership: "Leadership",
             scholars: "Scholars",
             volunteers: "Volunteers",
             sponsors: "Partners",
             news: "News",
+            events: "Events",
+            gallery: "Gallery",
             contact: "Contact",
             apply: "Apply for Scholarship",
             demoBanner: "Project facts are taken from the PDF; the next application dates and process are not specified in the document.",
@@ -525,8 +600,41 @@
             becomeVolunteer: "Become a volunteer",
             newsEyebrow: "News and events",
             newsTitle: "Latest updates",
-            newsText: "Official announcements will be shared here when available.",
+            newsText: "Project updates and announcements.",
             allNews: "All news",
+            readMore: "Read more",
+            leadershipEyebrow: "The Iz Kaltyr team",
+            leadershipTitle: "Project leadership",
+            leadershipText: "The people leading the Iz Kaltyr project.",
+            leaderPresident: "President of Iz Kaltyr",
+            leaderFirstCohort: "Leader of cohort 1",
+            leaderSecondCohort: "Leader of cohort 2",
+            leaderBiography: "Biography",
+            leaderBackground: "Professional background",
+            leaderAchievements: "Achievements and activities",
+            leaderResponsibilities: "Project responsibilities",
+            galleryEyebrow: "Project moments",
+            galleryTitle: "Photo gallery",
+            galleryText: "Photos from Iz Kaltyr project activities.",
+            galleryAll: "All photos",
+            galleryActivities: "Project activities",
+            galleryMeetings: "Meetings",
+            galleryGatherings: "Student gatherings",
+            galleryEducation: "Educational activities",
+            galleryMoments: "Special moments",
+            galleryOpen: "Enlarge photo",
+            galleryClose: "Close",
+            eventsEyebrow: "Iz Kaltyr project",
+            eventsTitle: "Events",
+            eventsText: "Upcoming and past project events.",
+            upcomingEvents: "Upcoming events",
+            completedEvents: "Completed events",
+            eventDate: "Date",
+            eventLocation: "Location",
+            eventCategory: "Category",
+            eventUpcoming: "Upcoming",
+            eventCompleted: "Completed",
+            eventDetails: "About this event",
             faqEyebrow: "Frequently asked questions",
             faqTitle: "Have a question?",
             faqDraft: "Answers are based on the project information in the PDF.",
@@ -583,8 +691,8 @@
             studentUniversityLabel: "University",
             studentCohortLabel: "Cohort",
             studentLanguagesLabel: "Languages",
-            photoUnavailable: "Photo unavailable",
             emptyStudents: "Student information is not available yet.",
+            studentNoResults: "No students found with that name.",
             allStudents: "All students",
             yearFilter: "Scholarship year",
             universityFilter: "University",
@@ -622,7 +730,7 @@
 
     const data = window.SITE_DATA;
     const app = document.getElementById("app");
-    const navKeys = ["home", "about", "scholarship", "team", "scholars", "volunteers", "sponsors", "news", "contact"];
+    const navKeys = ["home", "about", "scholarship", "team", "leadership", "scholars", "gallery", "events", "volunteers", "sponsors", "news", "contact"];
     const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients", "volunteers"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
@@ -636,7 +744,8 @@
         scholarUniversity: "",
         scholarField: "",
         newsQuery: "",
-        newsCategory: ""
+        newsCategory: "",
+        galleryCategory: ""
     };
 
     if (!translations[state.language]) {
@@ -681,23 +790,6 @@
         return "";
     }
 
-    function studentPhotoUrls(value) {
-        const photo = externalUrl(value);
-        if (!photo) return { src: "", fallback: "" };
-        const url = new URL(photo);
-        const isDriveHost = url.hostname === "drive.google.com" || url.hostname === "drive.usercontent.google.com";
-        if (!isDriveHost) return { src: photo, fallback: "" };
-        const fileId = url.searchParams.get("id") || url.pathname.match(/^\/file\/d\/([^/]+)/)?.[1];
-        if (!fileId) return { src: photo, fallback: "" };
-        const encodedId = encodeURIComponent(fileId);
-        const resourceKey = url.searchParams.get("resourcekey");
-        const resourceKeyParam = resourceKey ? `&resourcekey=${encodeURIComponent(resourceKey)}` : "";
-        return {
-            src: `https://drive.google.com/thumbnail?id=${encodedId}&sz=w1200${resourceKeyParam}`,
-            fallback: `https://drive.google.com/uc?export=view&id=${encodedId}${resourceKeyParam}`
-        };
-    }
-
     function link(route, label, className) {
         return `<a${className ? ` class="${className}"` : ""} href="#${route}">${label}</a>`;
     }
@@ -737,10 +829,14 @@
               <div><h2>${t("about")}</h2><ul>
                 <li>${link("about", t("about"))}</li>
                 <li>${link("team", t("team"))}</li>
-                <li>${link("scholars", t("scholars"))}</li>
+                <li>${link("leadership", t("leadership"))}</li>
+                <li>${link("scholars", t("allStudents"))}</li>
               </ul></div>
               <div><h2>${t("scholarship")}</h2><ul>
                 <li>${link("scholarship", t("details"))}</li>
+                <li>${link("gallery", t("gallery"))}</li>
+                <li>${link("events", t("events"))}</li>
+                <li>${link("news", t("news"))}</li>
                 <li>${link("volunteers", t("volunteers"))}</li>
                 <li>${link("sponsors", t("sponsors"))}</li>
               </ul></div>
@@ -801,6 +897,7 @@
           ${aboutPreview()}
           ${scholarshipPreview()}
           ${cohortsSection()}
+          ${leadershipSection()}
           ${scholarsPreview()}
           ${storiesSection()}
           ${sponsorsSection()}
@@ -893,15 +990,7 @@
 
     function eventsList() {
         const events = data.records.events.filter((event) => event.published && !event.deleted);
-        if (!events.length) return emptyState("emptyEvents", "✳");
-        return `<div class="card-grid">${events.map((event) => {
-            const title = recordText(event, "title");
-            const image = externalUrl(event.image);
-            const visual = image
-                ? `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(event, "imageAlt") || title)}" loading="lazy" decoding="async">`
-                : `<div class="event-placeholder" aria-hidden="true">✳</div>`;
-            return `<article class="news-card">${visual}<p class="eyebrow">${escapeHtml(recordText(event, "date") || t("datePending"))}</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(recordText(event, "description"))}</p></article>`;
-        }).join("")}</div>`;
+        return events.length ? eventsMarkup(events) : "";
     }
 
     function volunteerCards() {
@@ -925,9 +1014,11 @@
     }
 
     function newsPreview() {
+        const articles = data.records.articles.filter((article) => article.published && !article.deleted);
+        if (!articles.length) return "";
         return `<section class="section section-muted"><div class="container">
           <div class="section-heading section-heading-row"><div><p class="eyebrow">${t("newsEyebrow")}</p><h2>${t("newsTitle")}</h2></div><p>${t("newsText")}</p></div>
-          ${newsMarkup(data.records.articles.filter((article) => article.published && !article.deleted), false)}${link("news", t("allNews"), "button button-outline")}
+          ${newsMarkup(articles, false)}${link("news", t("allNews"), "button button-outline")}
         </div></section>`;
     }
 
@@ -996,6 +1087,111 @@
         </section>`;
     }
 
+    function leadershipSection() {
+        const leaders = data.leadership.filter((leader) => leader.published !== false);
+        if (!leaders.length) return "";
+        return `<section class="section leadership-section" id="leadership">
+          <div class="container">
+            <div class="section-heading"><p class="eyebrow">${t("leadershipEyebrow")}</p><h2>${t("leadershipTitle")}</h2><p>${t("leadershipText")}</p></div>
+            <div class="leadership-grid">${leaders.map((leader) => {
+                const name = recordText(leader, "fullName").trim();
+                const role = t(leader.roleKey);
+                const photo = externalUrl(leader.photo);
+                const fields = [
+                    ["biography", "leaderBiography"],
+                    ["background", "leaderBackground"],
+                    ["achievements", "leaderAchievements"],
+                    ["responsibilities", "leaderResponsibilities"]
+                ].map(([field, labelKey]) => [t(labelKey), recordText(leader, field).trim()]).filter(([, value]) => value);
+                return `<article class="leader-card">
+                  ${photo ? `<img class="leader-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(name || role)}" loading="lazy" decoding="async">` : ""}
+                  <div class="leader-card-content"><p class="eyebrow">${escapeHtml(role)}</p>${name ? `<h3>${escapeHtml(name)}</h3>` : ""}
+                    ${fields.map(([label, value]) => `<div class="leader-detail"><h4>${escapeHtml(label)}</h4><p>${escapeHtml(value)}</p></div>`).join("")}
+                  </div>
+                </article>`;
+            }).join("")}</div>
+          </div>
+        </section>`;
+    }
+
+    function leadershipPage() {
+        return `${pageIntro("leadershipEyebrow", "leadershipTitle", "leadershipText")}${leadershipSection()}`;
+    }
+
+    function galleryPage() {
+        const photos = data.gallery.filter((photo) => photo.published !== false && !photo.deleted);
+        const categories = data.galleryCategories;
+        const filters = photos.length
+            ? `<div class="gallery-filters" role="group" aria-label="${t("galleryTitle")}">
+                <button class="gallery-filter${state.galleryCategory ? "" : " is-active"}" type="button" data-gallery-filter="" aria-pressed="${!state.galleryCategory}">${t("galleryAll")}</button>
+                ${categories.filter(({ id }) => photos.some((photo) => photo.category === id)).map(({ id, labelKey }) => `<button class="gallery-filter${state.galleryCategory === id ? " is-active" : ""}" type="button" data-gallery-filter="${escapeHtml(id)}" aria-pressed="${state.galleryCategory === id}">${t(labelKey)}</button>`).join("")}
+              </div>`
+            : "";
+        const gallery = photos.length
+            ? `<section class="section"><div class="container">${filters}<div id="gallery-results">${galleryMarkup(photos)}</div>
+                <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="${t("galleryTitle")}">
+                  <button class="gallery-lightbox-close" type="button" aria-label="${t("galleryClose")}">×</button>
+                  <img class="gallery-lightbox-image" alt="">
+                  <div class="gallery-lightbox-caption"><p></p><time></time></div>
+                </dialog>
+              </div></section>`
+            : "";
+        return `${pageIntro("galleryEyebrow", "galleryTitle", "galleryText")}${gallery}`;
+    }
+
+    function galleryMarkup(photos) {
+        const filtered = photos.filter((photo) => !state.galleryCategory || photo.category === state.galleryCategory);
+        return `<div class="gallery-grid">${filtered.map((photo) => {
+            const image = externalUrl(photo.image);
+            if (!image) return "";
+            const caption = recordText(photo, "caption").trim();
+            const category = categoriesLabel(photo.category);
+            return `<button class="gallery-item" type="button" data-gallery-image="${escapeHtml(image)}" data-gallery-caption="${escapeHtml(caption)}" data-gallery-date="${escapeHtml(photo.date || "")}" aria-label="${escapeHtml(`${t("galleryOpen")}: ${caption || category}`)}">
+              <img src="${escapeHtml(image)}" alt="${escapeHtml(caption || category)}" loading="lazy" decoding="async">
+              <span class="gallery-item-caption">${caption ? `<span>${escapeHtml(caption)}</span>` : ""}<span class="gallery-item-meta">${escapeHtml(category)}${photo.date ? ` · ${escapeHtml(formatContentDate(photo.date))}` : ""}</span></span>
+            </button>`;
+        }).join("")}</div>`;
+    }
+
+    function categoriesLabel(categoryId) {
+        const category = data.galleryCategories.find((item) => item.id === categoryId);
+        return category ? t(category.labelKey) : "";
+    }
+
+    function formatContentDate(value) {
+        if (!value) return "";
+        const date = new Date(value.length === 10 ? `${value}T00:00:00` : value);
+        if (Number.isNaN(date.getTime())) return value;
+        return new Intl.DateTimeFormat(state.language, { dateStyle: "long" }).format(date);
+    }
+
+    function eventsPage() {
+        const events = data.records.events.filter((event) => event.published && !event.deleted);
+        const upcoming = events.filter((event) => event.status === "upcoming");
+        const completed = events.filter((event) => event.status === "completed");
+        return `${pageIntro("eventsEyebrow", "eventsTitle", "eventsText")}
+          ${upcoming.length ? `<section class="section"><div class="container"><div class="section-heading"><h2>${t("upcomingEvents")}</h2></div>${eventsMarkup(upcoming)}</div></section>` : ""}
+          ${completed.length ? `<section class="section section-muted"><div class="container"><div class="section-heading"><h2>${t("completedEvents")}</h2></div>${eventsMarkup(completed)}</div></section>` : ""}`;
+    }
+
+    function eventsMarkup(events) {
+        return `<div class="card-grid event-grid">${events.map((event) => {
+            const title = recordText(event, "title");
+            const image = externalUrl(event.image);
+            const date = formatContentDate(recordText(event, "date"));
+            const location = recordText(event, "location");
+            const category = recordText(event, "category");
+            const status = event.status === "upcoming" ? t("eventUpcoming") : t("eventCompleted");
+            return `<article class="event-card">${image ? `<img class="event-cover" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(event, "imageAlt") || title)}" loading="lazy" decoding="async">` : ""}
+              <div class="event-card-content"><div class="event-meta"><time datetime="${escapeHtml(recordText(event, "date"))}">${escapeHtml(date)}</time><span class="event-status">${escapeHtml(status)}</span></div>
+                ${category ? `<p class="eyebrow">${escapeHtml(category)}</p>` : ""}<h3>${escapeHtml(title)}</h3><p>${escapeHtml(recordText(event, "excerpt") || recordText(event, "description"))}</p>
+                ${location ? `<p class="event-location"><strong>${t("eventLocation")}:</strong> ${escapeHtml(location)}</p>` : ""}
+                ${link(`event/${encodeURIComponent(event.id)}`, t("readMore"), "text-link")}
+              </div>
+            </article>`;
+        }).join("")}</div>`;
+    }
+
     function aboutPage() {
         return `${pageIntro("aboutEyebrow", "aboutTitle", "aboutText")}${aboutPreview()}<section class="section section-muted"><div class="container"><p class="eyebrow">${t("historyLabel")}</p><h2>${t("historyLabel")}</h2><p class="lead">${t("historyPending")}</p></div></section>${directorProfileSection()}${storiesSection()}${teamSection()}`;
     }
@@ -1056,11 +1252,6 @@
         return `<div class="student-stats" aria-label="${t("studentStatistics")}">${items.map(([label, count]) => `<article class="student-stat" aria-label="${escapeHtml(label)}: ${count}"><span>${count}</span><h2>${label}</h2></article>`).join("")}</div>`;
     }
 
-    function studentPhotoPlaceholder(student) {
-        const initial = student.full_name.trim().charAt(0).toLocaleUpperCase() || "И";
-        return `<div class="person-placeholder student-placeholder" role="img" aria-label="${t("photoUnavailable")}">${escapeHtml(initial)}</div>`;
-    }
-
     function studentsMarkup(students, useFilters = true) {
         const query = useFilters ? state.studentQuery.trim().toLocaleLowerCase() : "";
         const filtered = students.filter((student) => {
@@ -1068,38 +1259,17 @@
                 && (!useFilters || !state.studentCohort || student.cohort === state.studentCohort);
         });
         if (!filtered.length) {
-            return emptyState(data.students.length ? "noResults" : "emptyStudents", "✳");
+            return emptyState(data.students.length ? "studentNoResults" : "emptyStudents", "✳");
         }
-        return `<div class="card-grid student-grid">${filtered.map((student) => {
+        return `<div class="student-list" role="list">${filtered.map((student) => {
             const name = student.full_name.trim();
-            const photo = studentPhotoUrls(student.photo_url);
-            const image = photo.src
-                ? `<img class="profile-image student-photo" src="${escapeHtml(photo.src)}"${photo.fallback ? ` data-fallback-src="${escapeHtml(photo.fallback)}"` : ""} alt="${escapeHtml(name)}" data-student-photo data-fallback-label="${escapeHtml(t("photoUnavailable"))}" data-fallback-initial="${escapeHtml(name.charAt(0).toLocaleUpperCase() || "И")}" loading="lazy" decoding="async">`
-                : studentPhotoPlaceholder(student);
-            return `<article class="person-card student-card">${image}<h3>${escapeHtml(name)}</h3><dl class="student-details">
+            const cohortLabel = student.cohort === "1-агым" ? t("firstCohortOption") : t("secondCohortOption");
+            return `<article class="student-row" role="listitem"><h2>${escapeHtml(name)}</h2><dl class="student-details">
               <div><dt>${t("studentUniversityLabel")}</dt><dd>${escapeHtml(student.university.trim())}</dd></div>
-              <div><dt>${t("studentCohortLabel")}</dt><dd>${escapeHtml(student.cohort)}</dd></div>
+              <div><dt>${t("studentCohortLabel")}</dt><dd>${escapeHtml(cohortLabel)}</dd></div>
               <div><dt>${t("studentLanguagesLabel")}</dt><dd>${escapeHtml(student.language.trim())}</dd></div>
             </dl></article>`;
         }).join("")}</div>`;
-    }
-
-    function bindStudentPhotoFallbacks(container) {
-        container.querySelectorAll("img[data-student-photo]").forEach((image) => {
-            image.addEventListener("error", () => {
-                if (image.dataset.fallbackSrc) {
-                    image.src = image.dataset.fallbackSrc;
-                    delete image.dataset.fallbackSrc;
-                    return;
-                }
-                const placeholder = document.createElement("div");
-                placeholder.className = "person-placeholder student-placeholder";
-                placeholder.setAttribute("role", "img");
-                placeholder.setAttribute("aria-label", image.dataset.fallbackLabel);
-                placeholder.textContent = image.dataset.fallbackInitial;
-                image.replaceWith(placeholder);
-            });
-        });
     }
 
     function filterSelect(id, labelKey, values, selected) {
@@ -1130,6 +1300,7 @@
 
     function newsPage() {
         const articles = data.records.articles.filter((article) => article.published && !article.deleted);
+        if (!articles.length) return pageIntro("newsEyebrow", "newsTitle", "newsText");
         const categories = [...new Set(articles.map((article) => recordText(article, "category")).filter(Boolean))].sort();
         return `${pageIntro("newsEyebrow", "newsTitle", "newsText")}
           <section class="section"><div class="container">
@@ -1147,12 +1318,13 @@
             return (!query || text.includes(query)) && (!useFilters || !state.newsCategory || recordText(article, "category") === state.newsCategory);
         });
         if (!filtered.length) {
-            return emptyState(articles.length ? "noResults" : "emptyNews", "✳");
+            return articles.length ? emptyState("noResults", "✳") : "";
         }
         return `<div class="card-grid">${filtered.map((article) => {
             const image = externalUrl(article.image);
             const title = recordText(article, "title");
-            return `<article class="news-card">${image ? `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy">` : ""}<p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h2>${link(`article/${encodeURIComponent(article.id)}`, escapeHtml(title))}</h2><p>${escapeHtml(recordText(article, "excerpt"))}</p><span>${escapeHtml(recordText(article, "date") || t("datePending"))}</span></article>`;
+            const date = recordText(article, "date");
+            return `<article class="news-card">${image ? `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">` : ""}<p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h2>${link(`article/${encodeURIComponent(article.id)}`, escapeHtml(title))}</h2><p>${escapeHtml(recordText(article, "excerpt"))}</p><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${link(`article/${encodeURIComponent(article.id)}`, t("readMore"), "text-link")}</article>`;
         }).join("")}</div>`;
     }
 
@@ -1189,12 +1361,36 @@
         if (route === "about") return aboutPage();
         if (route === "scholarship") return scholarshipPage();
         if (route === "team") return `${pageIntro("team", "team", "emptyTeam")}${teamSection()}`;
+        if (route === "leadership") return leadershipPage();
         if (route === "scholars") return directoryPage();
+        if (route === "gallery") return galleryPage();
+        if (route === "events") return eventsPage();
         if (route === "volunteers") return volunteersPage();
         if (route === "sponsors") return sponsorsPage();
         if (route === "sponsors#partner-form") return sponsorsPage();
         if (route === "news") return newsPage();
         if (route === "contact") return contactPage();
+        if (route.startsWith("event/")) {
+            const id = decodeURIComponent(route.slice("event/".length));
+            const event = data.records.events.find((record) => record.id === id && record.published && !record.deleted);
+            if (event) {
+                const title = recordText(event, "title");
+                const image = externalUrl(event.image);
+                const date = recordText(event, "date");
+                const status = event.status === "upcoming" ? t("eventUpcoming") : t("eventCompleted");
+                return `${pageIntro("eventsEyebrow", "eventDetails", "eventsText")}
+                  <section class="section"><article class="container article-body event-article">
+                    ${image ? `<img class="article-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(event, "imageAlt") || title)}">` : ""}
+                    <p class="eyebrow">${escapeHtml(recordText(event, "category"))}</p><h1>${escapeHtml(title)}</h1>
+                    <div class="event-detail-meta"><p><strong>${t("eventDate")}:</strong> ${escapeHtml(formatContentDate(date))}</p><p><strong>${t("eventStatus")}:</strong> ${escapeHtml(status)}</p>
+                      ${recordText(event, "location") ? `<p><strong>${t("eventLocation")}:</strong> ${escapeHtml(recordText(event, "location"))}</p>` : ""}
+                    </div>
+                    <div class="article-copy">${recordText(event, "description").split(/\n+/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>
+                    ${link("events", t("events"), "text-link")}
+                  </article></section>`;
+            }
+            return `<section class="not-found"><div class="container"><h1>${t("notFoundTitle")}</h1>${link("events", t("events"), "button button-outline")}</div></section>`;
+        }
         if (route.startsWith("scholar/")) {
             const id = route.slice("scholar/".length);
             const scholar = data.records.scholars.find((record) => record.id === id && record.published && !record.deleted);
@@ -1214,7 +1410,9 @@
             if (article) {
                 const image = externalUrl(article.image);
                 const title = recordText(article, "title");
-                return `${pageIntro("newsEyebrow", "newsTitle", "datePending")}<section class="section"><article class="container article-body"><p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(recordText(article, "date") || t("datePending"))}</p>${image ? `<img class="article-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}">` : ""}<p>${escapeHtml(recordText(article, "body") || recordText(article, "excerpt"))}</p>${link("news", t("backToNews"), "text-link")}</article></section>`;
+                const date = recordText(article, "date");
+                const body = recordText(article, "body") || recordText(article, "excerpt");
+                return `${pageIntro("newsEyebrow", "newsTitle", "newsText")}<section class="section"><article class="container article-body"><p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h1>${escapeHtml(title)}</h1><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${image ? `<img class="article-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">` : ""}<div class="article-copy">${body.split(/\n+/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>${link("news", t("backToNews"), "text-link")}</article></section>`;
             }
             return `${pageIntro("newsEyebrow", "articleMissing", "articleMissing")}<section class="section"><div class="container">${link("news", t("backToNews"), "button button-outline")}</div></section>`;
         }
@@ -1236,7 +1434,6 @@
         document.querySelector('meta[property="og:description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:title"]').content = `${t("homeTitle")} — Из Калтыр`;
         document.querySelector('meta[property="og:locale"]').content = { ky: "ky_KG", ru: "ru_RU", en: "en_US" }[state.language];
-        bindStudentPhotoFallbacks(app);
         bindControls();
         animateStatistics();
     }
@@ -1275,6 +1472,7 @@
         if (!translations[language]) return;
         const scrollPosition = window.scrollY;
         state.language = language;
+        state.newsCategory = "";
         try {
             localStorage.setItem("iz-kaltyr-language", language);
         } catch (error) {
@@ -1310,12 +1508,45 @@
             });
         });
 
+        const galleryResults = document.getElementById("gallery-results");
+        if (galleryResults) {
+            const bindGalleryItems = () => {
+                galleryResults.querySelectorAll("[data-gallery-image]").forEach((item) => {
+                    item.addEventListener("click", () => {
+                        const dialog = document.getElementById("gallery-lightbox");
+                        dialog.querySelector(".gallery-lightbox-image").src = item.dataset.galleryImage;
+                        dialog.querySelector(".gallery-lightbox-image").alt = item.dataset.galleryCaption;
+                        dialog.querySelector(".gallery-lightbox-caption p").textContent = item.dataset.galleryCaption;
+                        dialog.querySelector(".gallery-lightbox-caption time").textContent = formatContentDate(item.dataset.galleryDate);
+                        dialog.showModal();
+                    });
+                });
+            };
+            bindGalleryItems();
+            document.querySelectorAll("[data-gallery-filter]").forEach((filter) => {
+                filter.addEventListener("click", () => {
+                    state.galleryCategory = filter.dataset.galleryFilter;
+                    document.querySelectorAll("[data-gallery-filter]").forEach((button) => {
+                        const selected = button === filter;
+                        button.classList.toggle("is-active", selected);
+                        button.setAttribute("aria-pressed", String(selected));
+                    });
+                    galleryResults.innerHTML = galleryMarkup(data.gallery.filter((photo) => photo.published !== false && !photo.deleted));
+                    bindGalleryItems();
+                });
+            });
+            const dialog = document.getElementById("gallery-lightbox");
+            dialog.querySelector(".gallery-lightbox-close").addEventListener("click", () => dialog.close());
+            dialog.addEventListener("click", (event) => {
+                if (event.target === dialog) dialog.close();
+            });
+        }
+
         const studentSearch = document.getElementById("student-search");
         if (studentSearch) {
             const updateStudentResults = () => {
                 const results = document.getElementById("student-directory-results");
                 results.innerHTML = studentsMarkup(data.students);
-                bindStudentPhotoFallbacks(results);
             };
             studentSearch.addEventListener("input", (event) => {
                 state.studentQuery = event.target.value;
