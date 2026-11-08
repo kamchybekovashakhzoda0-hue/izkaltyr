@@ -889,7 +889,7 @@
         return `<section class="section section-muted"><div class="container contact-layout">
           <div><p class="eyebrow">${t("contactEyebrow")}</p><h2>${t("contactTitle")}</h2><p class="lead">${t("contactText")}</p>${contactDetails()}</div>
           ${contactForm("contact", "contactFormTitle")}
-        </div></section>`;
+        </div></secion>`;
     }
 
     function directorProfileSection() {
