@@ -28,7 +28,8 @@
             photoAlt: "Тоолордун сүрөтү жана Из Калтыр стипендиялык программасынын логотиби түшүрүлгөн баннер.",
             statsEyebrow: "Биздин көрсөткүчтөр",
             statsTitle: "Ар бир мүмкүнчүлүк маанилүү",
-            statsNote: "Көрсөткүчтөр PDF документинде көрсөтүлгөн агымдардын маалыматтарына негизделет.",
+            statsNote: "Көрсөткүчтөр студенттердин маалыматтары жана долбоордун көрсөткүчтөрүнүн негизинде эсептелет.",
+            statTotalStudents: "Бардык студенттер",
             statFirstCohort: "1-агымдын студенттери",
             statSecondCohort: "2-агымдын студенттери",
             statScholarshipRecipients: "2-агымдын стипендиаттары",
@@ -116,6 +117,7 @@
             studentLanguagesLabel: "Тилдер",
             photoUnavailable: "Сүрөт жеткиликтүү эмес",
             emptyStudents: "Студенттер тууралуу маалымат азырынча жок.",
+            allStudents: "Бардык студенттер",
             allScholars: "Бардык стипендиаттар",
             storiesEyebrow: "Окуялар",
             storiesTitle: "Маанилүү өзгөрүүлөр адамдан башталат",
@@ -232,7 +234,8 @@
             photoAlt: "Баннер с изображением гор и логотипом стипендиальной программы «Из Калтыр».",
             statsEyebrow: "Наши показатели",
             statsTitle: "Каждая возможность важна",
-            statsNote: "Показатели основаны на данных о потоках, приведённых в PDF-документе.",
+            statsNote: "Показатели рассчитаны по данным студентов и проекта.",
+            statTotalStudents: "Всего студентов",
             statFirstCohort: "Студентов в 1-м потоке",
             statSecondCohort: "Студентов во 2-м потоке",
             statScholarshipRecipients: "Стипендиатов во 2-м потоке",
@@ -377,6 +380,7 @@
             studentLanguagesLabel: "Языки",
             photoUnavailable: "Фотография недоступна",
             emptyStudents: "Информация о студентах пока отсутствует.",
+            allStudents: "Все студенты",
             yearFilter: "Год стипендии",
             universityFilter: "Вуз",
             fieldFilter: "Направление обучения",
@@ -436,7 +440,8 @@
             photoAlt: "Banner with a mountain scene and the Iz Kaltyr scholarship program logo.",
             statsEyebrow: "Our impact",
             statsTitle: "Every opportunity matters",
-            statsNote: "Figures are based on the cohort information provided in the PDF.",
+            statsNote: "Figures are calculated from student data and project records.",
+            statTotalStudents: "Total students",
             statFirstCohort: "Students in cohort 1",
             statSecondCohort: "Students in cohort 2",
             statScholarshipRecipients: "Scholarship recipients in cohort 2",
@@ -580,6 +585,7 @@
             studentLanguagesLabel: "Languages",
             photoUnavailable: "Photo unavailable",
             emptyStudents: "Student information is not available yet.",
+            allStudents: "All students",
             yearFilter: "Scholarship year",
             universityFilter: "University",
             fieldFilter: "Field of study",
@@ -617,7 +623,7 @@
     const data = window.SITE_DATA;
     const app = document.getElementById("app");
     const navKeys = ["home", "about", "scholarship", "team", "scholars", "volunteers", "sponsors", "news", "contact"];
-    const statKeys = ["firstCohort", "secondCohort", "scholarshipRecipients", "volunteers"];
+    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients", "volunteers"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
     const state = {
@@ -675,13 +681,21 @@
         return "";
     }
 
-    function studentPhotoUrl(value) {
+    function studentPhotoUrls(value) {
         const photo = externalUrl(value);
-        if (!photo) return "";
+        if (!photo) return { src: "", fallback: "" };
         const url = new URL(photo);
-        if (url.hostname !== "drive.google.com") return photo;
+        const isDriveHost = url.hostname === "drive.google.com" || url.hostname === "drive.usercontent.google.com";
+        if (!isDriveHost) return { src: photo, fallback: "" };
         const fileId = url.searchParams.get("id") || url.pathname.match(/^\/file\/d\/([^/]+)/)?.[1];
-        return fileId ? `https://drive.google.com/uc?export=view&id=${encodeURIComponent(fileId)}` : photo;
+        if (!fileId) return { src: photo, fallback: "" };
+        const encodedId = encodeURIComponent(fileId);
+        const resourceKey = url.searchParams.get("resourcekey");
+        const resourceKeyParam = resourceKey ? `&resourcekey=${encodeURIComponent(resourceKey)}` : "";
+        return {
+            src: `https://drive.google.com/thumbnail?id=${encodedId}&sz=w1200${resourceKeyParam}`,
+            fallback: `https://drive.google.com/uc?export=view&id=${encodedId}${resourceKeyParam}`
+        };
     }
 
     function link(route, label, className) {
@@ -839,7 +853,7 @@
     function scholarsPreview() {
         return `<section class="section"><div class="container">
           <div class="section-heading section-heading-row"><div><p class="eyebrow">${t("studentsEyebrow")}</p><h2>${t("studentsTitle")}</h2></div><p>${t("studentsText")}</p></div>
-          ${studentsMarkup(data.students.slice(0, 6), false)}${link("scholars", t("allScholars"), "button button-outline")}
+          ${studentsMarkup(data.students.slice(0, 6), false)}${link("scholars", t("allStudents"), "button button-outline")}
         </div></section>`;
     }
 
@@ -1039,7 +1053,7 @@
             [t("studentsFirstCohortLabel"), statistics.firstCohort],
             [t("studentsSecondCohortLabel"), statistics.secondCohort]
         ];
-        return `<div class="student-stats" aria-label="${t("studentStatistics")}">${items.map(([label, count]) => `<article class="student-stat"><span>${count}</span><h2>${label}</h2></article>`).join("")}</div>`;
+        return `<div class="student-stats" aria-label="${t("studentStatistics")}">${items.map(([label, count]) => `<article class="student-stat" aria-label="${escapeHtml(label)}: ${count}"><span>${count}</span><h2>${label}</h2></article>`).join("")}</div>`;
     }
 
     function studentPhotoPlaceholder(student) {
@@ -1058,9 +1072,9 @@
         }
         return `<div class="card-grid student-grid">${filtered.map((student) => {
             const name = student.full_name.trim();
-            const photo = studentPhotoUrl(student.photo_url);
-            const image = photo
-                ? `<img class="profile-image student-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(name)}" data-student-photo data-fallback-label="${escapeHtml(t("photoUnavailable"))}" data-fallback-initial="${escapeHtml(name.charAt(0).toLocaleUpperCase() || "И")}" loading="lazy" decoding="async">`
+            const photo = studentPhotoUrls(student.photo_url);
+            const image = photo.src
+                ? `<img class="profile-image student-photo" src="${escapeHtml(photo.src)}"${photo.fallback ? ` data-fallback-src="${escapeHtml(photo.fallback)}"` : ""} alt="${escapeHtml(name)}" data-student-photo data-fallback-label="${escapeHtml(t("photoUnavailable"))}" data-fallback-initial="${escapeHtml(name.charAt(0).toLocaleUpperCase() || "И")}" loading="lazy" decoding="async">`
                 : studentPhotoPlaceholder(student);
             return `<article class="person-card student-card">${image}<h3>${escapeHtml(name)}</h3><dl class="student-details">
               <div><dt>${t("studentUniversityLabel")}</dt><dd>${escapeHtml(student.university.trim())}</dd></div>
@@ -1073,13 +1087,18 @@
     function bindStudentPhotoFallbacks(container) {
         container.querySelectorAll("img[data-student-photo]").forEach((image) => {
             image.addEventListener("error", () => {
+                if (image.dataset.fallbackSrc) {
+                    image.src = image.dataset.fallbackSrc;
+                    delete image.dataset.fallbackSrc;
+                    return;
+                }
                 const placeholder = document.createElement("div");
                 placeholder.className = "person-placeholder student-placeholder";
                 placeholder.setAttribute("role", "img");
                 placeholder.setAttribute("aria-label", image.dataset.fallbackLabel);
                 placeholder.textContent = image.dataset.fallbackInitial;
                 image.replaceWith(placeholder);
-            }, { once: true });
+            });
         });
     }
 

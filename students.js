@@ -712,7 +712,7 @@
         "cohort":  "1-агым",
         "university":  "БИК",
         "language":  "Кыргыз тили , орус тили ,англис тили, араб тили ,түрк тили ,француз тили",
-        "photo_url":  null
+        "photo_url":  ""
     }
 ];
     window.STUDENTS = Object.freeze(students.map((student) => Object.freeze(student)));

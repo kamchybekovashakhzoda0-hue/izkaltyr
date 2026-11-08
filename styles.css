@@ -425,7 +425,7 @@ h3 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -915,6 +915,16 @@ h3 {
 .student-placeholder {
   height: 200px;
   aspect-ratio: 4 / 3;
+}
+
+.profile-image.student-photo {
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.student-placeholder {
+  min-height: 200px;
+  margin-bottom: 18px;
 }
 
 .student-details {
@@ -1478,6 +1488,12 @@ h3 {
 
   .stat-card:nth-child(4) {
     border-top: 1px solid var(--line);
+  }
+
+  .stat-card:nth-child(5) {
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
   .about-visual {
