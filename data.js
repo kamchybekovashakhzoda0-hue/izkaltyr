@@ -2,14 +2,20 @@
     "use strict";
 
 
+    const students = window.STUDENTS;
+    if (!Array.isArray(students)) {
+        throw new Error("The local student data module did not load.");
+    }
+
     const cohorts = Object.freeze([
-        Object.freeze({ id: "first", participants: 80, monthlyScholarship: 3000 }),
-        Object.freeze({ id: "second", participants: 41, scholarshipRecipients: 30, volunteers: 11, monthlyScholarship: 4000 })
+        Object.freeze({ id: "first", participants: students.filter((student) => student.cohort === "1-агым").length, monthlyScholarship: 3000 }),
+        Object.freeze({ id: "second", participants: students.filter((student) => student.cohort === "2-агым").length, scholarshipRecipients: 30, volunteers: 11, monthlyScholarship: 4000 })
     ]);
 
     window.SITE_DATA = Object.freeze({
         demoMode: true,
         organizationName: "Из Калтыр",
+        students,
         directorProfile: Object.freeze({
             image: "public/images/director-abdumanap.jpg",
             languages: Object.freeze({
@@ -78,6 +84,7 @@
         cohorts,
         statistics() {
             return {
+                totalStudents: students.length,
                 firstCohort: cohorts[0].participants,
                 secondCohort: cohorts[1].participants,
                 scholarshipRecipients: cohorts[1].scholarshipRecipients,

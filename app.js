@@ -98,6 +98,24 @@
             scholarsEyebrow: "Биздин коомчулук",
             scholarsTitle: "Стипендиаттар",
             scholarsText: " 30 стипендиант",
+            studentsEyebrow: "Из Калтырдын студенттери",
+            studentsTitle: "Биздин студенттер",
+            studentsText: "Из Калтыр коомчулугунун студенттери менен таанышыңыз.",
+            studentStatistics: "Студенттер боюнча көрсөткүчтөр",
+            studentsTotalLabel: "Бардык студенттер",
+            studentsFirstCohortLabel: "1-агымдагы студенттер",
+            studentsSecondCohortLabel: "2-агымдагы студенттер",
+            studentSearchLabel: "Студентти издөө",
+            studentSearchPlaceholder: "Студенттин аты боюнча издөө",
+            studentCohortFilter: "Агым боюнча чыпкалоо",
+            allCohorts: "Бардык агымдар",
+            firstCohortOption: "1-агым",
+            secondCohortOption: "2-агым",
+            studentUniversityLabel: "Окуу жайы",
+            studentCohortLabel: "Агым",
+            studentLanguagesLabel: "Тилдер",
+            photoUnavailable: "Сүрөт жеткиликтүү эмес",
+            emptyStudents: "Студенттер тууралуу маалымат азырынча жок.",
             allScholars: "Бардык стипендиаттар",
             storiesEyebrow: "Окуялар",
             storiesTitle: "Маанилүү өзгөрүүлөр адамдан башталат",
@@ -341,6 +359,24 @@
             emptyEvents: "Информация о мероприятиях появится позже.",
             searchLabel: "Поиск",
             searchPlaceholder: "Поиск по имени или ключевому слову",
+            studentsEyebrow: "Студенты «Из Калтыр»",
+            studentsTitle: "Наши студенты",
+            studentsText: "Познакомьтесь со студентами сообщества «Из Калтыр».",
+            studentStatistics: "Статистика студентов",
+            studentsTotalLabel: "Всего студентов",
+            studentsFirstCohortLabel: "Студенты 1-го потока",
+            studentsSecondCohortLabel: "Студенты 2-го потока",
+            studentSearchLabel: "Поиск студента",
+            studentSearchPlaceholder: "Поиск по имени студента",
+            studentCohortFilter: "Фильтр по потоку",
+            allCohorts: "Все потоки",
+            firstCohortOption: "1-й поток",
+            secondCohortOption: "2-й поток",
+            studentUniversityLabel: "Учебное заведение",
+            studentCohortLabel: "Поток",
+            studentLanguagesLabel: "Языки",
+            photoUnavailable: "Фотография недоступна",
+            emptyStudents: "Информация о студентах пока отсутствует.",
             yearFilter: "Год стипендии",
             universityFilter: "Вуз",
             fieldFilter: "Направление обучения",
@@ -526,6 +562,24 @@
             emptyEvents: "Event details will be shared later.",
             searchLabel: "Search",
             searchPlaceholder: "Search by name or keyword",
+            studentsEyebrow: "Iz Kaltyr students",
+            studentsTitle: "Our students",
+            studentsText: "Meet the students in the Iz Kaltyr community.",
+            studentStatistics: "Student statistics",
+            studentsTotalLabel: "Total students",
+            studentsFirstCohortLabel: "Cohort 1 students",
+            studentsSecondCohortLabel: "Cohort 2 students",
+            studentSearchLabel: "Search students",
+            studentSearchPlaceholder: "Search by student name",
+            studentCohortFilter: "Filter by cohort",
+            allCohorts: "All cohorts",
+            firstCohortOption: "Cohort 1",
+            secondCohortOption: "Cohort 2",
+            studentUniversityLabel: "University",
+            studentCohortLabel: "Cohort",
+            studentLanguagesLabel: "Languages",
+            photoUnavailable: "Photo unavailable",
+            emptyStudents: "Student information is not available yet.",
             yearFilter: "Scholarship year",
             universityFilter: "University",
             fieldFilter: "Field of study",
@@ -569,6 +623,8 @@
     const state = {
         language: localStorage.getItem("iz-kaltyr-language") || "ky",
         menuOpen: false,
+        studentQuery: "",
+        studentCohort: "",
         scholarQuery: "",
         scholarYear: "",
         scholarUniversity: "",
@@ -617,6 +673,15 @@
         }
         console.error("Ignoring a URL with an unsupported protocol in the local site data.");
         return "";
+    }
+
+    function studentPhotoUrl(value) {
+        const photo = externalUrl(value);
+        if (!photo) return "";
+        const url = new URL(photo);
+        if (url.hostname !== "drive.google.com") return photo;
+        const fileId = url.searchParams.get("id") || url.pathname.match(/^\/file\/d\/([^/]+)/)?.[1];
+        return fileId ? `https://drive.google.com/uc?export=view&id=${encodeURIComponent(fileId)}` : photo;
     }
 
     function link(route, label, className) {
@@ -773,8 +838,8 @@
 
     function scholarsPreview() {
         return `<section class="section"><div class="container">
-          <div class="section-heading section-heading-row"><div><p class="eyebrow">${t("scholarsEyebrow")}</p><h2>${t("scholarsTitle")}</h2></div><p>${t("scholarsText")}</p></div>
-          ${scholarsMarkup(data.records.scholars.filter((record) => record.published && !record.deleted), false)}${link("scholars", t("allScholars"), "button button-outline")}
+          <div class="section-heading section-heading-row"><div><p class="eyebrow">${t("studentsEyebrow")}</p><h2>${t("studentsTitle")}</h2></div><p>${t("studentsText")}</p></div>
+          ${studentsMarkup(data.students.slice(0, 6), false)}${link("scholars", t("allScholars"), "button button-outline")}
         </div></section>`;
     }
 
@@ -953,19 +1018,69 @@
     }
 
     function directoryPage() {
-        const scholars = data.records.scholars.filter((record) => record.published && !record.deleted);
-        const options = (field) => [...new Set(scholars.map((record) => field === "year" ? record.year : recordText(record, field)).filter(Boolean))]
-            .sort((left, right) => String(left).localeCompare(String(right), undefined, { numeric: true }));
-        return `${pageIntro("scholarsEyebrow", "scholarsTitle", "scholarsText")}
+        return `${pageIntro("studentsEyebrow", "studentsTitle", "studentsText")}
           <section class="section"><div class="container">
-            <div class="filter-bar">
-              <label>${t("searchLabel")}<input id="scholar-search" type="search" placeholder="${t("searchPlaceholder")}" value="${escapeHtml(state.scholarQuery)}"></label>
-              ${filterSelect("scholar-year", "yearFilter", options("year"), state.scholarYear)}
-              ${filterSelect("scholar-university", "universityFilter", options("university"), state.scholarUniversity)}
-              ${filterSelect("scholar-field", "fieldFilter", options("field"), state.scholarField)}
+            ${studentStatisticsMarkup()}
+            <div class="filter-bar student-filter-bar">
+              <label>${t("studentSearchLabel")}<input id="student-search" type="search" placeholder="${t("studentSearchPlaceholder")}" value="${escapeHtml(state.studentQuery)}"></label>
+              <label>${t("studentCohortFilter")}<select id="student-cohort"><option value="">${t("allCohorts")}</option>
+                <option value="1-агым"${state.studentCohort === "1-агым" ? " selected" : ""}>${t("firstCohortOption")}</option>
+                <option value="2-агым"${state.studentCohort === "2-агым" ? " selected" : ""}>${t("secondCohortOption")}</option>
+              </select></label>
             </div>
-            <div id="directory-results">${scholarsMarkup(scholars)}</div>
+            <div id="student-directory-results" aria-live="polite">${studentsMarkup(data.students)}</div>
           </div></section>`;
+    }
+
+    function studentStatisticsMarkup() {
+        const statistics = data.statistics();
+        const items = [
+            [t("studentsTotalLabel"), statistics.totalStudents],
+            [t("studentsFirstCohortLabel"), statistics.firstCohort],
+            [t("studentsSecondCohortLabel"), statistics.secondCohort]
+        ];
+        return `<div class="student-stats" aria-label="${t("studentStatistics")}">${items.map(([label, count]) => `<article class="student-stat"><span>${count}</span><h2>${label}</h2></article>`).join("")}</div>`;
+    }
+
+    function studentPhotoPlaceholder(student) {
+        const initial = student.full_name.trim().charAt(0).toLocaleUpperCase() || "И";
+        return `<div class="person-placeholder student-placeholder" role="img" aria-label="${t("photoUnavailable")}">${escapeHtml(initial)}</div>`;
+    }
+
+    function studentsMarkup(students, useFilters = true) {
+        const query = useFilters ? state.studentQuery.trim().toLocaleLowerCase() : "";
+        const filtered = students.filter((student) => {
+            return (!query || student.full_name.toLocaleLowerCase().includes(query))
+                && (!useFilters || !state.studentCohort || student.cohort === state.studentCohort);
+        });
+        if (!filtered.length) {
+            return emptyState(data.students.length ? "noResults" : "emptyStudents", "✳");
+        }
+        return `<div class="card-grid student-grid">${filtered.map((student) => {
+            const name = student.full_name.trim();
+            const photo = studentPhotoUrl(student.photo_url);
+            const image = photo
+                ? `<img class="profile-image student-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(name)}" data-student-photo data-fallback-label="${escapeHtml(t("photoUnavailable"))}" data-fallback-initial="${escapeHtml(name.charAt(0).toLocaleUpperCase() || "И")}" loading="lazy" decoding="async">`
+                : studentPhotoPlaceholder(student);
+            return `<article class="person-card student-card">${image}<h3>${escapeHtml(name)}</h3><dl class="student-details">
+              <div><dt>${t("studentUniversityLabel")}</dt><dd>${escapeHtml(student.university.trim())}</dd></div>
+              <div><dt>${t("studentCohortLabel")}</dt><dd>${escapeHtml(student.cohort)}</dd></div>
+              <div><dt>${t("studentLanguagesLabel")}</dt><dd>${escapeHtml(student.language.trim())}</dd></div>
+            </dl></article>`;
+        }).join("")}</div>`;
+    }
+
+    function bindStudentPhotoFallbacks(container) {
+        container.querySelectorAll("img[data-student-photo]").forEach((image) => {
+            image.addEventListener("error", () => {
+                const placeholder = document.createElement("div");
+                placeholder.className = "person-placeholder student-placeholder";
+                placeholder.setAttribute("role", "img");
+                placeholder.setAttribute("aria-label", image.dataset.fallbackLabel);
+                placeholder.textContent = image.dataset.fallbackInitial;
+                image.replaceWith(placeholder);
+            }, { once: true });
+        });
     }
 
     function filterSelect(id, labelKey, values, selected) {
@@ -1102,6 +1217,7 @@
         document.querySelector('meta[property="og:description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:title"]').content = `${t("homeTitle")} — Из Калтыр`;
         document.querySelector('meta[property="og:locale"]').content = { ky: "ky_KG", ru: "ru_RU", en: "en_US" }[state.language];
+        bindStudentPhotoFallbacks(app);
         bindControls();
         animateStatistics();
     }
@@ -1174,6 +1290,23 @@
                 }
             });
         });
+
+        const studentSearch = document.getElementById("student-search");
+        if (studentSearch) {
+            const updateStudentResults = () => {
+                const results = document.getElementById("student-directory-results");
+                results.innerHTML = studentsMarkup(data.students);
+                bindStudentPhotoFallbacks(results);
+            };
+            studentSearch.addEventListener("input", (event) => {
+                state.studentQuery = event.target.value;
+                updateStudentResults();
+            });
+            document.getElementById("student-cohort").addEventListener("change", (event) => {
+                state.studentCohort = event.target.value;
+                updateStudentResults();
+            });
+        }
 
         const scholarSearch = document.getElementById("scholar-search");
         if (scholarSearch) {

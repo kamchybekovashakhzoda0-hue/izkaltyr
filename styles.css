@@ -864,10 +864,82 @@ h3 {
   background: var(--surface);
 }
 
+.student-filter-bar {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.student-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.student-stat {
+  padding: 18px 22px;
+  background: var(--navy);
+}
+
+.student-stat span {
+  display: block;
+  color: var(--orange);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.student-stat h2 {
+  margin: 6px 0 0;
+  color: var(--white);
+  font-size: 0.88rem;
+  letter-spacing: 0;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+}
+
+.student-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.student-card h3 {
+  font-size: 1.08rem;
+}
+
+.student-photo,
+.student-placeholder {
+  height: 200px;
+  aspect-ratio: 4 / 3;
+}
+
+.student-details {
+  display: grid;
+  gap: 11px;
+  margin: 12px 0 0;
+}
+
+.student-details > div {
+  padding-top: 9px;
+  border-top: 1px solid var(--line);
+}
+
+.student-details dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.student-details dd {
+  margin: 3px 0 0;
+  color: var(--ink);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .person-card,
@@ -1301,6 +1373,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .student-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1441,8 +1517,17 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .filter-bar {
+  .filter-bar,
+  .student-filter-bar {
     padding: 16px;
+  }
+
+  .student-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-grid {
