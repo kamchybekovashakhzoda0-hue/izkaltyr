@@ -13,8 +13,8 @@
     }
 
     const cohorts = Object.freeze([
-        Object.freeze({ id: "first", participants: students.filter((student) => student.cohort === "1-агым").length, monthlyScholarship: 3000 }),
-        Object.freeze({ id: "second", participants: students.filter((student) => student.cohort === "2-агым").length, scholarshipRecipients: 30, monthlyScholarship: 4000 })
+        Object.freeze({ id: "first", participants: 70, monthlyScholarship: 3000 }),
+        Object.freeze({ id: "second", participants: 45, scholarshipRecipients: 30, monthlyScholarship: 4000 })
     ]);
 
     window.SITE_DATA = Object.freeze({
@@ -91,11 +91,10 @@
         cohorts,
         statistics() {
             return {
-                totalStudents: students.length,
+                totalStudents: cohorts.reduce((total, cohort) => total + cohort.participants, 0),
                 firstCohort: cohorts[0].participants,
                 secondCohort: cohorts[1].participants,
-                scholarshipRecipients: cohorts[1].scholarshipRecipients,
-                featuredStudents: 41
+                scholarshipRecipients: cohorts[1].scholarshipRecipients
             };
         },
         scholarship: Object.freeze({

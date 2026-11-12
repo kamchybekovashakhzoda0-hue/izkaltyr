@@ -30,12 +30,11 @@
             photoAlt: "Тоолордун сүрөтү жана Из Калтыр стипендиялык программасынын логотиби түшүрүлгөн баннер.",
             statsEyebrow: "Биздин көрсөткүчтөр",
             statsTitle: "Ар бир мүмкүнчүлүк маанилүү",
-            statsNote: "Көрсөткүчтөр студенттердин маалыматтары жана долбоордун көрсөткүчтөрүнүн негизинде эсептелет.",
+            statsNote: "Көрсөткүчтөр агымдардын расмий сандарын көрсөтөт; жарыяланган студенттик профилдердин саны айырмаланышы мүмкүн.",
             statTotalStudents: "Бардык студенттер",
             statFirstCohort: "1-агымдын студенттери",
             statSecondCohort: "2-агымдын студенттери",
             statScholarshipRecipients: "2-агымдын стипендиаттары",
-            statFeaturedStudents: "студент",
             statEvents: "Иш-чаралар",
             aboutEyebrow: "Биз жөнүндө",
             aboutTitle: "Билим аркылуу жаңы мүмкүнчүлүктөрдү ачабыз",
@@ -101,7 +100,7 @@
             cohortMonthlyScholarship: "Ай сайын берилүүчү стипендия",
             scholarsEyebrow: "Биздин коомчулук",
             scholarsTitle: "Стипендиаттар",
-            scholarsText: " 30 стипендиант",
+            scholarsText: "2-агымда 30 стипендиат бар.",
             studentsEyebrow: "Из Калтырдын студенттери",
             studentsTitle: "Биздин студенттер",
             studentsText: "Из Калтыр коомчулугунун студенттери менен таанышыңыз.",
@@ -156,14 +155,6 @@
             galleryOpen: "Сүрөттү чоңойтуу",
             galleryClose: "Жабуу",
             galleryEmpty: "Азырынча галереяга сүрөт кошула элек.",
-            galleryUploadTitle: "Галереяга сүрөт кошуу",
-            galleryUploadText: "Бир нече сүрөттү тандап, жүктөөдөн мурун алдын ала көрүңүз.",
-            gallerySelectPhotos: "Сүрөттөрдү тандоо",
-            galleryPreviewReady: "{count} сүрөт алдын ала көрүүгө даяр.",
-            galleryNoSelection: "Азырынча сүрөт тандалган жок.",
-            galleryInvalidImage: "Сүрөт файлдарын гана тандаңыз.",
-            galleryUploadUnavailable: "Коопсуз администратордук кирүү жана сервердик сактагыч туташтырыла элек. Жүктөө азырынча өчүк.",
-            galleryUploadButton: "Сүрөттөрдү жүктөө",
             eventsEyebrow: "Из Калтыр долбоору",
             eventsTitle: "Иш-чаралар",
             eventsText: "Долбоордун алдыдагы жана өткөн иш-чаралары.",
@@ -179,16 +170,17 @@
             faqTitle: "Сурооңуз барбы?",
             faqDraft: "Жооптор долбоордун расмий жобосуна жана шарттарына негизделет.",
             faqQ1: "Долбоор кимдерди колдойт?",
-            faqA1: "Билимге умтулган, активдүү жана өзүн өнүктүрүүгө аракет кылган мыкты студенттерди. Так тандоо критерийлери документте көрсөтүлгөн эмес.",
+            faqA1: "Билим алууга дилгир, активдүү жана өзүн-өзү өнүктүрүүгө умтулган студенттерди колдойт. Тандоонун так критерийлери ар бир кабыл алуунун алдында расмий жарыяланат.",
             faqQ2: "Стипендиянын өлчөмү канча?",
-            faqA2: "Биринчи агымда ай сайын 3 000 сом, экинчи агымда ай сайын 4 000 сом деп көрсөтүлгөн.",
+            faqA2: "Стипендиянын өлчөмү катышуучунун агымына (потогуна) жараша белгиленет: биринчи агым үчүн айына 3 000 сом, ал эми экинчи агым үчүн 4 000 сом каралган.",
             faqQ3: "Стипендиаттардын жоопкерчилиги кандай?",
-            faqA3: "Жолугушууларга жана иш-чараларга активдүү катышуу; милдеттерди убагында аткаруу; долбоорго идея жана демилге менен салым кошуу; берилген мүмкүнчүлүктөр аркылуу өнүгүү; башка стипендиаттарды колдоп, командада иштөө.",
+            faqA3: "Жолугушууларга жана иш-чараларга активдүү катышуу, берилген тапшырмаларды өз убагында аткаруу, долбоордун өнүгүшүнө салым кошуу, өзүн-өзү өстүрүү жана командадагы башка стипендиаттарды колдоо.",
             faqQ4: "Арыз берүүнүн мөөнөтү жана баскычтары кандай?",
-            faqA4: "PDF документинде кийинки кабыл алуунун датасы, арыз берүү тартиби, тандоо баскычтары жана керектүү документтер көрсөтүлгөн эмес.",
+            faqA4: "Жаңы кабыл алуунун мөөнөтү, тандоо баскычтары жана керектүү документтердин тизмеси тууралуу толук маалымат сайтта жана расмий социалдык баракчаларыбызда алдын ала жарыяланат.",
             contactEyebrow: "Байланыш",
             contactTitle: "Биз менен байланышта болуңуз",
-            contactText: "Долбоор тууралуу кошумча маалымат алуу же суроо берүү үчүн төмөндөгү байланыш каражаттарын же форманы колдонуңуз.",
+            contactText: "Суроолоруңуз, сунуштарыңыз же кызматташуу боюнча идеяларыңыз болсо, бизге каалаган убакта жазыңыз. Биз сиз менен байланышууга ар дайым кубанычтабыз!",
+            socialNotice: "Социалдык тармактардагы баракчаларыбыз жакында кошулат.",
             emailLabel: "Электрондук почта",
             emailPlaceholder: "[info@izkaltyr.kg же башка электрондук почта дареги]",
             phoneLabel: "Телефон",
@@ -274,12 +266,11 @@
             photoAlt: "Баннер с изображением гор и логотипом стипендиальной программы «Из Калтыр».",
             statsEyebrow: "Наши показатели",
             statsTitle: "Каждая возможность важна",
-            statsNote: "Показатели рассчитаны по данным студентов и проекта.",
+            statsNote: "Указаны официальные показатели потоков; число опубликованных профилей студентов может отличаться.",
             statTotalStudents: "Всего студентов",
             statFirstCohort: "Студентов в 1-м потоке",
             statSecondCohort: "Студентов во 2-м потоке",
             statScholarshipRecipients: "Стипендиатов во 2-м потоке",
-            statFeaturedStudents: "студентов",
             statEvents: "Мероприятия",
             aboutEyebrow: "О нас",
             aboutTitle: "Открываем новые возможности через образование",
@@ -345,7 +336,7 @@
             cohortMonthlyScholarship: "Ежемесячная стипендия",
             scholarsEyebrow: "Наше сообщество",
             scholarsTitle: "Стипендиаты",
-            scholarsText: "В PDF указано, что во втором потоке было 30 стипендиатов. Индивидуальные профили в документе не представлены.",
+            scholarsText: "Во втором потоке — 30 стипендиатов. Индивидуальные профили на сайте не публикуются.",
             allScholars: "Все стипендиаты",
             storiesEyebrow: "Истории",
             storiesTitle: "Знакомство со 2-м потоком",
@@ -381,14 +372,6 @@
             galleryOpen: "Открыть фотографию",
             galleryClose: "Закрыть",
             galleryEmpty: "В галерею пока не добавлены фотографии.",
-            galleryUploadTitle: "Добавить фото в галерею",
-            galleryUploadText: "Выберите несколько фотографий и просмотрите их перед загрузкой.",
-            gallerySelectPhotos: "Выбрать фотографии",
-            galleryPreviewReady: "Готово к просмотру: {count} фото.",
-            galleryNoSelection: "Фотографии пока не выбраны.",
-            galleryInvalidImage: "Выберите только файлы изображений.",
-            galleryUploadUnavailable: "Безопасный вход для администратора и серверное хранилище не подключены. Загрузка пока отключена.",
-            galleryUploadButton: "Загрузить фотографии",
             eventsEyebrow: "Проект «Из Калтыр»",
             eventsTitle: "Мероприятия",
             eventsText: "Предстоящие и прошедшие мероприятия проекта.",
@@ -404,16 +387,17 @@
             faqTitle: "Остались вопросы?",
             faqDraft: "Ответы основаны на официальном положении и условиях проекта.",
             faqQ1: "Кого поддерживает проект?",
-            faqA1: "Стремящихся к знаниям, активных и развивающихся студентов. Точные критерии отбора в документе не указаны.",
+            faqA1: "Проект поддерживает студентов, стремящихся к знаниям, активных и нацеленных на саморазвитие. Точные критерии отбора будут официально объявлены перед каждым набором.",
             faqQ2: "Каков размер стипендии?",
             faqA2: "В первом потоке указана ежемесячная стипендия 3 000 сомов, во втором — 4 000 сомов.",
             faqQ3: "За что отвечает стипендиат?",
             faqA3: "За активное участие во встречах и мероприятиях, своевременное выполнение обязанностей, вклад в проект, собственное развитие и командную поддержку других стипендиатов.",
             faqQ4: "Когда и как подать заявку?",
-            faqA4: "В PDF не указаны даты следующего набора, порядок подачи, этапы отбора или список необходимых документов.",
+            faqA4: "Сроки нового набора, этапы отбора и список необходимых документов будут заранее опубликованы на сайте и официальных страницах проекта в социальных сетях.",
             contactEyebrow: "Контакты",
             contactTitle: "Будьте на связи",
-            contactText: "Чтобы узнать больше о проекте или задать вопрос, воспользуйтесь указанными ниже контактами или формой.",
+            contactText: "Если у вас есть вопросы, предложения или идеи о сотрудничестве, напишите нам в любое время. Мы всегда рады быть на связи!",
+            socialNotice: "Ссылки на наши страницы в социальных сетях появятся в ближайшее время.",
             emailLabel: "Электронная почта",
             emailPlaceholder: "[info@izkaltyr.kg или другой адрес электронной почты]",
             phoneLabel: "Телефон",
@@ -518,12 +502,11 @@
             photoAlt: "Banner with a mountain scene and the Iz Kaltyr scholarship program logo.",
             statsEyebrow: "Our impact",
             statsTitle: "Every opportunity matters",
-            statsNote: "Figures are calculated from student data and project records.",
+            statsNote: "Figures show official cohort totals; the number of published student profiles may differ.",
             statTotalStudents: "Total students",
             statFirstCohort: "Students in cohort 1",
             statSecondCohort: "Students in cohort 2",
             statScholarshipRecipients: "Scholarship recipients in cohort 2",
-            statFeaturedStudents: "Students",
             statEvents: "Events",
             aboutEyebrow: "About us",
             aboutTitle: "Opening new opportunities through education",
@@ -589,7 +572,7 @@
             cohortMonthlyScholarship: "Monthly scholarship",
             scholarsEyebrow: "Our community",
             scholarsTitle: "Scholars",
-            scholarsText: "The PDF states that cohort 2 had 30 scholarship recipients. Individual profiles are not included in the document.",
+            scholarsText: "Cohort 2 had 30 scholarship recipients. Individual profiles are not published on the website.",
             allScholars: "All scholars",
             storiesEyebrow: "Stories",
             storiesTitle: "Meet the second cohort",
@@ -625,14 +608,6 @@
             galleryOpen: "Enlarge photo",
             galleryClose: "Close",
             galleryEmpty: "No photos have been added to the gallery yet.",
-            galleryUploadTitle: "Add photos to the gallery",
-            galleryUploadText: "Select multiple photos and preview them before uploading.",
-            gallerySelectPhotos: "Choose photos",
-            galleryPreviewReady: "{count} photos ready to preview.",
-            galleryNoSelection: "No photos selected yet.",
-            galleryInvalidImage: "Please select image files only.",
-            galleryUploadUnavailable: "Secure administrator sign-in and server storage are not configured. Uploads are currently disabled.",
-            galleryUploadButton: "Upload photos",
             eventsEyebrow: "Iz Kaltyr project",
             eventsTitle: "Events",
             eventsText: "Upcoming and past project events.",
@@ -648,16 +623,17 @@
             faqTitle: "Have a question?",
             faqDraft: "Answers are based on the project's official regulations and terms.",
             faqQ1: "Who does the project support?",
-            faqA1: "Students who are eager to learn, active, and committed to self-development. Exact selection criteria are not specified in the document.",
+            faqA1: "Students who are eager to learn, active, and committed to self-development. Exact selection criteria are announced prior to each intake.",
             faqQ2: "What is the scholarship amount?",
             faqA2: "The first cohort is listed with a monthly scholarship of 3,000 soms; the second, 4,000 soms.",
             faqQ3: "What are scholars responsible for?",
             faqA3: "Actively participating in meetings and events, completing responsibilities on time, contributing to the project, developing themselves, and supporting fellow scholars as a team.",
             faqQ4: "When and how can I apply?",
-            faqA4: "The PDF does not specify the next intake dates, application process, selection stages, or required documents.",
+            faqA4: "Upcoming intake dates, application procedures, selection stages, and required documents will be officially announced on our website and social media channels.",
             contactEyebrow: "Contact",
             contactTitle: "Get in touch",
-            contactText: "To learn more about the project or ask a question, use the contact details below or send us a message through the form.",
+            contactText: "If you have questions, suggestions, or ideas for collaboration, write to us anytime. We are always happy to hear from you!",
+            socialNotice: "Our social media pages will be added soon.",
             emailLabel: "Email",
             emailPlaceholder: "[info@izkaltyr.kg or another email address]",
             phoneLabel: "Phone",
@@ -739,7 +715,7 @@
     const data = window.SITE_DATA;
     const app = document.getElementById("app");
     const navKeys = ["home", "about", "scholarship", "team", "leadership", "scholars", "gallery", "events", "sponsors", "news", "contact"];
-    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients", "featuredStudents"];
+    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
     const state = {
@@ -753,8 +729,7 @@
         scholarField: "",
         newsQuery: "",
         newsCategory: "",
-        galleryCategory: "",
-        galleryPreviewUrls: []
+        galleryCategory: ""
     };
 
     if (!translations[state.language]) {
@@ -1006,6 +981,7 @@
           <div><span class="detail-label">${t("emailLabel")}</span><p>${t("emailPlaceholder")}</p></div>
           <div><span class="detail-label">${t("phoneLabel")}</span><p>${t("phonePlaceholder")}</p></div>
           <div><span class="detail-label">${t("addressLabel")}</span><p>${t("addressPlaceholder")}</p></div>
+          <p>${t("socialNotice")}</p>
         </div>`;
     }
 
@@ -1108,15 +1084,6 @@
         return `${pageIntro("galleryEyebrow", "galleryTitle", "galleryText")}
           <section class="section"><div class="container gallery-page-content">
             ${gallery}
-            <section class="gallery-upload-panel" aria-labelledby="gallery-upload-title">
-              <h2 id="gallery-upload-title">${t("galleryUploadTitle")}</h2>
-              <p>${t("galleryUploadText")}</p>
-              <label class="gallery-upload-field">${t("gallerySelectPhotos")}<input id="gallery-upload-input" type="file" accept="image/*" multiple aria-describedby="gallery-upload-status"></label>
-              <div id="gallery-upload-previews" class="gallery-upload-previews"></div>
-              <p id="gallery-upload-status" class="form-status" role="status" aria-live="polite">${t("galleryNoSelection")}</p>
-              <p class="muted-text">${t("galleryUploadUnavailable")}</p>
-              <button class="button button-orange" type="button" data-gallery-upload disabled>${t("galleryUploadButton")}</button>
-            </section>
           </div></section>`;
     }
 
@@ -1395,8 +1362,6 @@
     }
 
     function render() {
-        state.galleryPreviewUrls.forEach((url) => URL.revokeObjectURL(url));
-        state.galleryPreviewUrls = [];
         const route = getRoute();
         app.innerHTML = shell(routeContent(route));
         document.documentElement.lang = state.language;
@@ -1514,28 +1479,6 @@
             dialog.querySelector(".gallery-lightbox-close").addEventListener("click", () => dialog.close());
             dialog.addEventListener("click", (event) => {
                 if (event.target === dialog) dialog.close();
-            });
-        }
-
-        const galleryUploadInput = document.getElementById("gallery-upload-input");
-        if (galleryUploadInput) {
-            galleryUploadInput.addEventListener("change", () => {
-                state.galleryPreviewUrls.forEach((url) => URL.revokeObjectURL(url));
-                state.galleryPreviewUrls = [];
-                const files = [...galleryUploadInput.files];
-                const validFiles = files.filter((file) => file.type.startsWith("image/"));
-                const previews = document.getElementById("gallery-upload-previews");
-                const status = document.getElementById("gallery-upload-status");
-                previews.innerHTML = validFiles.map((file) => {
-                    const imageUrl = URL.createObjectURL(file);
-                    state.galleryPreviewUrls.push(imageUrl);
-                    return `<figure class="gallery-upload-preview"><img src="${imageUrl}" alt="${escapeHtml(file.name)}"><figcaption>${escapeHtml(file.name)}</figcaption></figure>`;
-                }).join("");
-                status.textContent = validFiles.length !== files.length
-                    ? t("galleryInvalidImage")
-                    : validFiles.length
-                        ? t("galleryPreviewReady").replace("{count}", String(validFiles.length))
-                        : t("galleryNoSelection");
             });
         }
 
