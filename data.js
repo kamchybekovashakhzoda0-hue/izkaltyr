@@ -14,7 +14,7 @@
 
     const cohorts = Object.freeze([
         Object.freeze({ id: "first", participants: 70, monthlyScholarship: 3000 }),
-        Object.freeze({ id: "second", participants: 45, scholarshipRecipients: 30, monthlyScholarship: 4000 })
+        Object.freeze({ id: "second", participants: 45, monthlyScholarship: 4000 })
     ]);
 
     window.SITE_DATA = Object.freeze({
@@ -93,8 +93,7 @@
             return {
                 totalStudents: cohorts.reduce((total, cohort) => total + cohort.participants, 0),
                 firstCohort: cohorts[0].participants,
-                secondCohort: cohorts[1].participants,
-                scholarshipRecipients: cohorts[1].scholarshipRecipients
+                secondCohort: cohorts[1].participants
             };
         },
         scholarship: Object.freeze({

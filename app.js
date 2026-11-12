@@ -34,7 +34,6 @@
             statTotalStudents: "Бардык студенттер",
             statFirstCohort: "1-агымдын студенттери",
             statSecondCohort: "2-агымдын студенттери",
-            statScholarshipRecipients: "2-агымдын стипендиаттары",
             statEvents: "Иш-чаралар",
             aboutEyebrow: "Биз жөнүндө",
             aboutTitle: "Билим аркылуу жаңы мүмкүнчүлүктөрдү ачабыз",
@@ -78,7 +77,6 @@
             responsibilityInitiative: "Идея, аракет жана демилге менен долбоордун жашоосуна салым кошуу.",
             responsibilityGrowth: "Стипендия менен катар долбоор берген билимди, тажрыйбаны жана мүмкүнчүлүктөрдү колдонуп өнүгүү.",
             responsibilityTeamwork: "Башка стипендиаттарды колдоо, бири-бирин сыйлоо жана команда болуп иштөө.",
-            noApplication: "Кийинки кабыл алууга тапшыруу шилтемеси документте жок.",
             details: "Толук маалымат",
             readStory: "Окуяны окуу",
             directorEyebrow: "Долбоордун негиздөөчүсү",
@@ -96,7 +94,6 @@
             cohortFirstDescription: "Долбоор 2025-жылы ишин баштаган.",
             cohortSecondDescription: "Долбоор 2026-жылы экинчи агымын «жаңы башталыш» деп белгилеген.",
             cohortParticipants: "Студент",
-            cohortRecipients: "Стипендиат",
             cohortMonthlyScholarship: "Ай сайын берилүүчү стипендия",
             scholarsEyebrow: "Биздин коомчулук",
             scholarsTitle: "Стипендиаттар",
@@ -270,7 +267,6 @@
             statTotalStudents: "Всего студентов",
             statFirstCohort: "Студентов в 1-м потоке",
             statSecondCohort: "Студентов во 2-м потоке",
-            statScholarshipRecipients: "Стипендиатов во 2-м потоке",
             statEvents: "Мероприятия",
             aboutEyebrow: "О нас",
             aboutTitle: "Открываем новые возможности через образование",
@@ -314,7 +310,6 @@
             responsibilityInitiative: "Вносить вклад в жизнь проекта своими идеями, действиями и инициативой.",
             responsibilityGrowth: "Развиваться, используя не только стипендию, но и знания, опыт и возможности проекта.",
             responsibilityTeamwork: "Поддерживать других стипендиатов, уважать друг друга и работать командой.",
-            noApplication: "Ссылка для подачи заявки на следующий набор в документе отсутствует.",
             details: "Подробнее",
             readStory: "Читать историю",
             directorEyebrow: "Основатель проекта",
@@ -332,7 +327,6 @@
             cohortFirstDescription: "Проект начал работу в 2025 году.",
             cohortSecondDescription: "В документе второй поток обозначен как «новое начало».",
             cohortParticipants: "Студентов",
-            cohortRecipients: "Стипендиатов",
             cohortMonthlyScholarship: "Ежемесячная стипендия",
             scholarsEyebrow: "Наше сообщество",
             scholarsTitle: "Стипендиаты",
@@ -506,7 +500,6 @@
             statTotalStudents: "Total students",
             statFirstCohort: "Students in cohort 1",
             statSecondCohort: "Students in cohort 2",
-            statScholarshipRecipients: "Scholarship recipients in cohort 2",
             statEvents: "Events",
             aboutEyebrow: "About us",
             aboutTitle: "Opening new opportunities through education",
@@ -550,7 +543,6 @@
             responsibilityInitiative: "Contribute to the project through ideas, action, and initiative.",
             responsibilityGrowth: "Grow by using the project's knowledge, experience, and opportunities as well as the scholarship.",
             responsibilityTeamwork: "Support other scholars, respect one another, and work as a team.",
-            noApplication: "The document does not include a link for the next application period.",
             details: "Learn more",
             readStory: "Read story",
             directorEyebrow: "Project founder",
@@ -568,7 +560,6 @@
             cohortFirstDescription: "The project began in 2025.",
             cohortSecondDescription: "The document describes the second cohort as a “new beginning.”",
             cohortParticipants: "Students",
-            cohortRecipients: "Scholarship recipients",
             cohortMonthlyScholarship: "Monthly scholarship",
             scholarsEyebrow: "Our community",
             scholarsTitle: "Scholars",
@@ -715,7 +706,7 @@
     const data = window.SITE_DATA;
     const app = document.getElementById("app");
     const navKeys = ["home", "about", "scholarship", "team", "leadership", "scholars", "gallery", "events", "sponsors", "news", "contact"];
-    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients"];
+    const statKeys = ["totalStudents", "firstCohort", "secondCohort"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
     const state = {
@@ -932,7 +923,6 @@
                 [t("cohortParticipants"), cohort.participants],
                 [t("cohortMonthlyScholarship"), `${cohort.monthlyScholarship.toLocaleString(state.language)} сом`]
             ];
-            if (cohort.scholarshipRecipients) details.push([t("cohortRecipients"), cohort.scholarshipRecipients]);
             return `<article class="cohort-card"><p class="eyebrow">${t(cohort.id === "first" ? "cohortFirstTitle" : "cohortSecondTitle")}</p><h3>${t(cohort.id === "first" ? "cohortFirstTitle" : "cohortSecondTitle")}</h3><p>${t(cohort.id === "first" ? "cohortFirstDescription" : "cohortSecondDescription")}</p><dl>${details.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}</dl></article>`;
           }).join("")}</div>
         </div></section>`;
@@ -1157,7 +1147,6 @@
               <h3>${t("stagesLabel")}</h3><p>${t("stagesPending")}</p>
               <h3>${t("documentsLabel")}</h3><p>${t("documentsPending")}</p>
               <h3>${t("responsibilitiesLabel")}</h3><ol class="program-list">${responsibilityKeys.map((key) => `<li>${t(key)}</li>`).join("")}</ol>
-              <p class="notice-box">${t("noApplication")}</p>
             </article>
             <aside class="side-note"><h2>${t("faqTitle")}</h2><p>${t("faqDraft")}</p><a href="#home#faq" class="text-link">${t("details")} <span aria-hidden="true">↗</span></a></aside>
           </div></section>${faqSection()}`;

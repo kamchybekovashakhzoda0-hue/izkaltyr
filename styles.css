@@ -425,7 +425,7 @@ h3 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -681,12 +681,6 @@ h3 {
 
 .side-note p {
   color: var(--muted);
-}
-
-.notice-box {
-  padding: 15px;
-  border-left: 3px solid var(--orange);
-  background: #FFF4EA;
 }
 
 .empty-state {
@@ -1919,10 +1913,6 @@ h3 {
     padding-left: 0;
     border-top: 1px solid var(--line);
     border-left: 0;
-  }
-
-  .stat-card:nth-child(4) {
-    border-top: 1px solid var(--line);
   }
 
   .about-visual {
