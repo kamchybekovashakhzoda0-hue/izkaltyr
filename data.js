@@ -14,7 +14,7 @@
 
     const cohorts = Object.freeze([
         Object.freeze({ id: "first", participants: students.filter((student) => student.cohort === "1-агым").length, monthlyScholarship: 3000 }),
-        Object.freeze({ id: "second", participants: students.filter((student) => student.cohort === "2-агым").length, scholarshipRecipients: 30, volunteers: 11, monthlyScholarship: 4000 })
+        Object.freeze({ id: "second", participants: students.filter((student) => student.cohort === "2-агым").length, scholarshipRecipients: 30, monthlyScholarship: 4000 })
     ]);
 
     window.SITE_DATA = Object.freeze({
@@ -83,11 +83,10 @@
         records: Object.freeze({
                 scholars: [],
                 sponsors: [],
-                volunteers: [],
                 events: projectContent.events,
                 team: [],
                 articles: projectContent.news,
-                stories: []
+                stories: projectContent.stories
             }),
         cohorts,
         statistics() {
@@ -96,7 +95,7 @@
                 firstCohort: cohorts[0].participants,
                 secondCohort: cohorts[1].participants,
                 scholarshipRecipients: cohorts[1].scholarshipRecipients,
-                volunteers: cohorts[1].volunteers
+                featuredStudents: 41
             };
         },
         scholarship: Object.freeze({

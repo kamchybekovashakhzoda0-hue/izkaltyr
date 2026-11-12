@@ -15,7 +15,6 @@
             team: "Команда",
             leadership: "Жетекчилик",
             scholars: "Стипендиаттар",
-            volunteers: "Ыктыярчылар",
             sponsors: "Өнөктөштөр",
             news: "Жаңылыктар",
             events: "Иш-чаралар",
@@ -27,7 +26,7 @@
             heroText: "Из Калтыр — жаштардын билим алуусуна, өнүгүүсүнө жана коомго салым кошуусуна жол ачкан стипендиялык демилге.",
             learnScholarship: "Стипендия жөнүндө",
             ourImpact: "Биздин таасирибиз", 
-            photoNote: "Келечекке Из калтыр ",
+            photoNote: "Келечекке из калтыр.",
             photoAlt: "Тоолордун сүрөтү жана Из Калтыр стипендиялык программасынын логотиби түшүрүлгөн баннер.",
             statsEyebrow: "Биздин көрсөткүчтөр",
             statsTitle: "Ар бир мүмкүнчүлүк маанилүү",
@@ -36,6 +35,7 @@
             statFirstCohort: "1-агымдын студенттери",
             statSecondCohort: "2-агымдын студенттери",
             statScholarshipRecipients: "2-агымдын стипендиаттары",
+            statFeaturedStudents: "студент",
             statEvents: "Иш-чаралар",
             aboutEyebrow: "Биз жөнүндө",
             aboutTitle: "Билим аркылуу жаңы мүмкүнчүлүктөрдү ачабыз",
@@ -48,14 +48,16 @@
             historyPending: "Долбоор 2025-жылы ишин баштаган. Биринчи агымга 80 студент катышып, ай сайын 3 000 сом стипендия алган.",
             valuesLabel: "Баалуулуктар",
             valuesText: "Билим · мүмкүнчүлүк · жоопкерчилик · коомчулук",
+            scholarQuoteLabel: "Из Калтыр стипендиаттарына",
+            scholarQuote: "Стипендия — бул колдоо гана эмес, билимиң менен коомго из калтырууга берилген мүмкүнчүлүк.",
             readAbout: "Демилге жөнүндө",
             scholarshipEyebrow: "Стипендиялык демилге",
             scholarshipTitle: "Кийинки кадамды билим менен жасаңыз",
-            scholarshipText: "Документте биринчи жана экинчи агымдын жыйынтыктары, стипендиянын өлчөмү жана катышуучулардын жоопкерчилиги берилген. Кийинки кабыл алуунун мөөнөтү, тандоо баскычтары жана документтердин тизмеси көрсөтүлгөн эмес.",
+            scholarshipText: "Документте биринчи жана экинчи агымдын жыйынтыктары, стипендиянын өлчөмү жана катышуучулардын жоопкерчилиги берилген. Кийинки кабыл алуу 2027-жылы башталып, арыздар июнь айында кабыл алынат; тандоо баскычтары жана керектүү документтер көрсөтүлгөн эмес.",
             statusLabel: "Кабыл алуу статусу",
-            statusUnconfirmed: "Кийинки кабыл алуу 2027 жылда башталат",
+            statusUnconfirmed: "Кийинки кабыл алуу 2027-жылы башталат",
             deadlineLabel: "Арыз берүү мөөнөтү",
-            deadlinePending: " 2027-жылдын июнь айында башталат",
+            deadlinePending: "2027-жылдын июнь айында",
             benefitsLabel: "Программанын артыкчылыктары",
             benefitsPending: "Ай сайын берилүүчү стипендия; жаңы чөйрө; нетворкинг; иш-чаралар; тажрыйба; өнүгүү; бирдиктүү жана ишенимдүү чөйрө.",
             benefitScholarship: "Ай сайын берилүүчү стипендия",
@@ -121,16 +123,12 @@
             allStudents: "Бардык студенттер",
             allScholars: "Бардык стипендиаттар",
             storiesEyebrow: "Окуялар",
-            storiesTitle: "2-чи агым менен жолугушуу,
-            storiesText: "Чыныгы окуялар каармандардын уруксаты менен кошулат. Азырынча жарыялоого даяр окуялар жок.",
+            storiesTitle: "2-чи агым менен жолугушуу",
+            storiesText: "2026-жылдын 3-октябрында «Из Калтыр» стипендиялык программасынын 2-агымы менен таанышуу жана стипендия тапшыруу аземи өттү.",
             sponsorsEyebrow: "Өнөктөштүк",
             sponsorsTitle: "Билимге бирге жол ачалы",
-            sponsorsText: "Расмий өнөктөштөр тууралуу маалымат ырасталгандан кийин жарыяланат.",
+            sponsorsText: "Расмий өнөктөштөр тууралуу маалымат.",
             becomePartner: "Өнөктөш болуу",
-            volunteerEyebrow: "Коомчулукка кошулуңуз",
-            volunteerTitle: "Убактыңызды жана жөндөмүңүздү бөлүшүңүз",
-            volunteerText: "Ыктыярчылык мүмкүнчүлүктөрү тууралуу маалымат уюм тарабынан ырасталгандан кийин жарыяланат.",
-            becomeVolunteer: "Ыктыярчы болуу",
             newsEyebrow: "Жаңылыктар жана иш-чаралар",
             newsTitle: "Акыркы жаңылыктар",
             newsText: "Долбоордун жаңылыктары жана жарыялары.",
@@ -157,6 +155,15 @@
             galleryMoments: "Өзгөчө көз ирмемдер",
             galleryOpen: "Сүрөттү чоңойтуу",
             galleryClose: "Жабуу",
+            galleryEmpty: "Азырынча галереяга сүрөт кошула элек.",
+            galleryUploadTitle: "Галереяга сүрөт кошуу",
+            galleryUploadText: "Бир нече сүрөттү тандап, жүктөөдөн мурун алдын ала көрүңүз.",
+            gallerySelectPhotos: "Сүрөттөрдү тандоо",
+            galleryPreviewReady: "{count} сүрөт алдын ала көрүүгө даяр.",
+            galleryNoSelection: "Азырынча сүрөт тандалган жок.",
+            galleryInvalidImage: "Сүрөт файлдарын гана тандаңыз.",
+            galleryUploadUnavailable: "Коопсуз администратордук кирүү жана сервердик сактагыч туташтырыла элек. Жүктөө азырынча өчүк.",
+            galleryUploadButton: "Сүрөттөрдү жүктөө",
             eventsEyebrow: "Из Калтыр долбоору",
             eventsTitle: "Иш-чаралар",
             eventsText: "Долбоордун алдыдагы жана өткөн иш-чаралары.",
@@ -170,7 +177,7 @@
             eventDetails: "Иш-чара тууралуу",
             faqEyebrow: "Көп берилүүчү суроолор",
             faqTitle: "Сурооңуз барбы?",
-            faqDraft: "Жооптор долбоор тууралуу PDF материалындагы маалыматка негизделет.",
+            faqDraft: "Жооптор долбоордун расмий жобосуна жана шарттарына негизделет.",
             faqQ1: "Долбоор кимдерди колдойт?",
             faqA1: "Билимге умтулган, активдүү жана өзүн өнүктүрүүгө аракет кылган мыкты студенттерди. Так тандоо критерийлери документте көрсөтүлгөн эмес.",
             faqQ2: "Стипендиянын өлчөмү канча?",
@@ -181,29 +188,26 @@
             faqA4: "PDF документинде кийинки кабыл алуунун датасы, арыз берүү тартиби, тандоо баскычтары жана керектүү документтер көрсөтүлгөн эмес.",
             contactEyebrow: "Байланыш",
             contactTitle: "Биз менен байланышта болуңуз",
-            contactText: "Расмий байланыш маалыматтары уюм тарабынан берилгенден кийин бул жерге кошулат.",
+            contactText: "Долбоор тууралуу кошумча маалымат алуу же суроо берүү үчүн төмөндөгү байланыш каражаттарын же форманы колдонуңуз.",
             emailLabel: "Электрондук почта",
-            emailPlaceholder: "[Расмий электрондук почта]",
+            emailPlaceholder: "[info@izkaltyr.kg же башка электрондук почта дареги]",
             phoneLabel: "Телефон",
-            phonePlaceholder: "[Телефон номери]",
-            addressLabel: "",
-            addressPlaceholder: "[Кеңсенин дареги]",
-            socialPlaceholder: "Расмий социалдык шилтемелер кийин кошулат.",
+            phonePlaceholder: "[+996 (XX) XXX-XXX форматында]",
+            addressLabel: "Дарек",
+            addressPlaceholder: "[Бишкек шаары, ... көчөсү]",
             contactFormTitle: "Бизге жазыңыз",
             nameLabel: "Атыңыз",
             emailField: "Электрондук почта",
             messageLabel: "Билдирүү",
             sendMessage: "Билдирүү жөнөтүү",
-            volunteerFormTitle: "Ыктыярчы болууга кызыгуум бар",
             partnerFormTitle: "Өнөктөштүк тууралуу сүйлөшөлү",
             organizationLabel: "Уюм / компания",
             interestLabel: "Кызыгууңуз тууралуу кыскача",
             submitInterest: "Кызыгууну билдирүү",
-            formDemoNotice: "Демо форма: маалымат текшерилди, бирок эч жакка жөнөтүлгөн же сакталган жок. Чыныгы жөнөтүү үчүн сервердик кызмат туташтырылышы керек.",
             emptyScholars: "Азырынча жарыяланган стипендиаттар жок.",
-            emptySponsors: "Расмий өнөктөштөр азырынча жарыялана элек.",
             emptyTeam: "Команда мүчөлөрү тууралуу текшерилген маалымат азырынча жок.",
-            emptyVolunteers: "Ыктыярчылар тууралуу маалымат азырынча жарыялана элек.",
+            teamPhotoCaption: "«Из Калтыр» командасы",
+            teamPhotoAlt: "«Из Калтыр» командасынын мүчөлөрү биргелешкен жолугушууда",
             emptyNews: "Азырынча жарыяланган жаңылыктар жок.",
             emptyStories: "Азырынча жарыяланган окуялар жок.",
             emptyEvents: "Иш-чаралар кийин жарыяланат.",
@@ -239,6 +243,7 @@
             formOrganizationRequired: "Уюмдун атын киргизиңиз.",
             formInterestRequired: "Кызыгууңузду кыскача жазыңыз.",
             formSubmissionBlocked: "Форма текшерүүдөн өтпөдү. Маалымат жөнөтүлгөн жок.",
+            formDemoNotice: "Демо форма: маалымат текшерилди, бирок жөнөтүлгөн же сакталган жок. Чыныгы жөнөтүү үчүн сервердик кызмат керек.",
             honeypotLabel: "Бул талааны бош калтырыңыз"
         },
         ru: {
@@ -254,20 +259,18 @@
             team: "Команда",
             leadership: "Руководство",
             scholars: "Стипендиаты",
-            volunteers: "Волонтёры",
             sponsors: "Партнёры",
             news: "Новости",
             events: "Мероприятия",
             gallery: "Фотогалерея",
             contact: "Контакты",
             apply: "Подать заявку",
-            demoBanner: "Факты о проекте взяты из PDF; сроки и порядок следующего набора в документе не указаны.",
             heroEyebrow: "Знание. Развитие. Возможности.",
             heroTitle: "Образованная молодёжь сегодня — развитие страны завтра!",
             heroText: "«Из Калтыр» — стипендиальная инициатива, которая помогает молодёжи получать образование, развиваться и вносить вклад в общество.",
             learnScholarship: "О стипендии",
             ourImpact: "Наш вклад",
-            photoNote: "Официальный баннер с логотипом организации и стипендиальной программой.",
+            photoNote: "Оставь свой след в будущем.",
             photoAlt: "Баннер с изображением гор и логотипом стипендиальной программы «Из Калтыр».",
             statsEyebrow: "Наши показатели",
             statsTitle: "Каждая возможность важна",
@@ -276,7 +279,7 @@
             statFirstCohort: "Студентов в 1-м потоке",
             statSecondCohort: "Студентов во 2-м потоке",
             statScholarshipRecipients: "Стипендиатов во 2-м потоке",
-            statVolunteers: "Волонтёры",
+            statFeaturedStudents: "студентов",
             statEvents: "Мероприятия",
             aboutEyebrow: "О нас",
             aboutTitle: "Открываем новые возможности через образование",
@@ -289,14 +292,16 @@
             historyPending: "Проект начал работу в 2025 году. В первом потоке участвовали 80 студентов; ежемесячная стипендия составляла 3 000 сомов.",
             valuesLabel: "Ценности",
             valuesText: "Образование · возможности · ответственность · сообщество",
+            scholarQuoteLabel: "Стипендиатам «Из Калтыр»",
+            scholarQuote: "Стипендия — это не только поддержка, но и возможность оставить след в жизни общества с помощью знаний.",
             readAbout: "О нашей инициативе",
             scholarshipEyebrow: "Стипендиальная инициатива",
             scholarshipTitle: "Сделайте следующий шаг с помощью образования",
-            scholarshipText: "В документе приведены сведения о первом и втором потоках, размере стипендии и ответственности стипендиатов. Сроки следующего набора, этапы отбора и список документов не указаны.",
+            scholarshipText: "В документе приведены сведения о первом и втором потоках, размере стипендии и ответственности стипендиатов. Следующий набор начнётся в 2027 году, заявки будут приниматься в июне; этапы отбора и список необходимых документов не указаны.",
             statusLabel: "Статус приёма",
-            statusUnconfirmed: "Сроки следующего набора в документе не указаны",
+            statusUnconfirmed: "Следующий набор начнётся в 2027 году",
             deadlineLabel: "Срок подачи",
-            deadlinePending: "Официальная дата не объявлена",
+            deadlinePending: "Июнь 2027 года",
             benefitsLabel: "Преимущества программы",
             benefitsPending: "Ежемесячная стипендия; новое окружение; нетворкинг; мероприятия; опыт; развитие; единое и доверительное сообщество.",
             benefitScholarship: "Ежемесячная стипендия",
@@ -337,23 +342,18 @@
             cohortSecondDescription: "В документе второй поток обозначен как «новое начало».",
             cohortParticipants: "Студентов",
             cohortRecipients: "Стипендиатов",
-            cohortVolunteers: "Волонтёров",
             cohortMonthlyScholarship: "Ежемесячная стипендия",
             scholarsEyebrow: "Наше сообщество",
             scholarsTitle: "Стипендиаты",
             scholarsText: "В PDF указано, что во втором потоке было 30 стипендиатов. Индивидуальные профили в документе не представлены.",
             allScholars: "Все стипендиаты",
             storiesEyebrow: "Истории",
-            storiesTitle: "Важные перемены начинаются с людей",
-            storiesText: "Реальные истории будут опубликованы с согласия героев. Готовых к публикации материалов пока нет.",
+            storiesTitle: "Знакомство со 2-м потоком",
+            storiesText: "3 октября 2026 года состоялась встреча со 2-м потоком стипендиальной программы «Из Калтыр» и церемония вручения стипендий.",
             sponsorsEyebrow: "Партнёрство",
             sponsorsTitle: "Вместе откроем путь к знаниям",
-            sponsorsText: "Информация об официальных партнёрах появится после подтверждения.",
+            sponsorsText: "Информация об официальных партнёрах.",
             becomePartner: "Стать партнёром",
-            volunteerEyebrow: "Присоединяйтесь к сообществу",
-            volunteerTitle: "Делитесь временем и навыками",
-            volunteerText: "Информация о волонтёрских возможностях будет опубликована после подтверждения организацией.",
-            becomeVolunteer: "Стать волонтёром",
             newsEyebrow: "Новости и события",
             newsTitle: "Последние новости",
             newsText: "Новости и объявления проекта.",
@@ -380,6 +380,15 @@
             galleryMoments: "Особые моменты",
             galleryOpen: "Открыть фотографию",
             galleryClose: "Закрыть",
+            galleryEmpty: "В галерею пока не добавлены фотографии.",
+            galleryUploadTitle: "Добавить фото в галерею",
+            galleryUploadText: "Выберите несколько фотографий и просмотрите их перед загрузкой.",
+            gallerySelectPhotos: "Выбрать фотографии",
+            galleryPreviewReady: "Готово к просмотру: {count} фото.",
+            galleryNoSelection: "Фотографии пока не выбраны.",
+            galleryInvalidImage: "Выберите только файлы изображений.",
+            galleryUploadUnavailable: "Безопасный вход для администратора и серверное хранилище не подключены. Загрузка пока отключена.",
+            galleryUploadButton: "Загрузить фотографии",
             eventsEyebrow: "Проект «Из Калтыр»",
             eventsTitle: "Мероприятия",
             eventsText: "Предстоящие и прошедшие мероприятия проекта.",
@@ -393,7 +402,7 @@
             eventDetails: "О мероприятии",
             faqEyebrow: "Частые вопросы",
             faqTitle: "Остались вопросы?",
-            faqDraft: "Ответы основаны на сведениях о проекте из PDF-документа.",
+            faqDraft: "Ответы основаны на официальном положении и условиях проекта.",
             faqQ1: "Кого поддерживает проект?",
             faqA1: "Стремящихся к знаниям, активных и развивающихся студентов. Точные критерии отбора в документе не указаны.",
             faqQ2: "Каков размер стипендии?",
@@ -404,29 +413,26 @@
             faqA4: "В PDF не указаны даты следующего набора, порядок подачи, этапы отбора или список необходимых документов.",
             contactEyebrow: "Контакты",
             contactTitle: "Будьте на связи",
-            contactText: "Официальные контактные данные будут добавлены после их предоставления организацией.",
+            contactText: "Чтобы узнать больше о проекте или задать вопрос, воспользуйтесь указанными ниже контактами или формой.",
             emailLabel: "Электронная почта",
-            emailPlaceholder: "Официальная электронная почта",
+            emailPlaceholder: "[info@izkaltyr.kg или другой адрес электронной почты]",
             phoneLabel: "Телефон",
-            phonePlaceholder: "Номер телефона",
+            phonePlaceholder: "[в формате +996 (XX) XXX-XXX]",
             addressLabel: "Адрес",
-            addressPlaceholder: "",
-            socialPlaceholder: "Официальные ссылки на соцсети появятся позже.",
+            addressPlaceholder: "[г. Бишкек, ул. ...]",
             contactFormTitle: "Напишите нам",
             nameLabel: "Ваше имя",
             emailField: "Электронная почта",
             messageLabel: "Сообщение",
             sendMessage: "Отправить сообщение",
-            volunteerFormTitle: "Хочу стать волонтёром",
             partnerFormTitle: "Обсудим партнёрство",
             organizationLabel: "Организация / компания",
             interestLabel: "Кратко расскажите о своём интересе",
             submitInterest: "Отправить запрос",
-            formDemoNotice: "Демо-форма: данные проверены, но не отправлены и не сохранены. Для настоящей отправки необходимо подключить серверный сервис.",
             emptyScholars: "Опубликованных профилей стипендиатов пока нет.",
-            emptySponsors: "Официальные партнёры пока не представлены.",
             emptyTeam: "Проверенная информация о команде пока не добавлена.",
-            emptyVolunteers: "Информация о волонтёрах пока не опубликована.",
+            teamPhotoCaption: "Команда «Из Калтыр»",
+            teamPhotoAlt: "Участники команды «Из Калтыр» на совместной встрече",
             emptyNews: "Опубликованных новостей пока нет.",
             emptyStories: "Опубликованных историй пока нет.",
             emptyEvents: "Информация о мероприятиях появится позже.",
@@ -480,6 +486,7 @@
             formMessageRequired: "Введите сообщение.",
             formOrganizationRequired: "Укажите название организации.",
             formInterestRequired: "Кратко опишите ваш интерес.",
+            formDemoNotice: "Демо-форма: данные проверены, но не отправлены и не сохранены. Для реальной отправки нужен серверный сервис.",
             formSubmissionBlocked: "Проверка формы ",
             honeypotLabel: "Оставьте это поле пустым"
         },
@@ -496,20 +503,18 @@
             team: "Our Team",
             leadership: "Leadership",
             scholars: "Scholars",
-            volunteers: "Volunteers",
             sponsors: "Partners",
             news: "News",
             events: "Events",
             gallery: "Gallery",
             contact: "Contact",
             apply: "Apply for Scholarship",
-            demoBanner: "Project facts are taken from the PDF; the next application dates and process are not specified in the document.",
             heroEyebrow: "Knowledge. Growth. Opportunity.",
             heroTitle: "Educated young people today — a stronger country tomorrow!",
             heroText: "Iz Kaltyr is a scholarship initiative that supports young people in learning, growing, and contributing to their communities.",
             learnScholarship: "About the scholarship",
             ourImpact: "Our impact",
-            photoNote: "Official banner featuring the organization logo and scholarship program.",
+            photoNote: "Leave a mark on the future.",
             photoAlt: "Banner with a mountain scene and the Iz Kaltyr scholarship program logo.",
             statsEyebrow: "Our impact",
             statsTitle: "Every opportunity matters",
@@ -518,7 +523,7 @@
             statFirstCohort: "Students in cohort 1",
             statSecondCohort: "Students in cohort 2",
             statScholarshipRecipients: "Scholarship recipients in cohort 2",
-            statVolunteers: "Volunteers",
+            statFeaturedStudents: "Students",
             statEvents: "Events",
             aboutEyebrow: "About us",
             aboutTitle: "Opening new opportunities through education",
@@ -531,14 +536,16 @@
             historyPending: "The project began in 2025. Its first cohort included 80 students, with a monthly scholarship of 3,000 soms.",
             valuesLabel: "Values",
             valuesText: "Education · opportunity · responsibility · community",
+            scholarQuoteLabel: "For Iz Kaltyr scholars",
+            scholarQuote: "A scholarship is more than support—it is an opportunity to make a lasting contribution to your community through knowledge.",
             readAbout: "About the initiative",
             scholarshipEyebrow: "Scholarship initiative",
             scholarshipTitle: "Take your next step through education",
-            scholarshipText: "The document describes the first and second cohorts, scholarship amounts, and scholar responsibilities. It does not specify dates for the next intake, selection stages, or required documents.",
+            scholarshipText: "The document describes the first and second cohorts, scholarship amounts, and scholar responsibilities. The next intake will begin in 2027, with applications accepted in June; selection stages and required documents are not specified.",
             statusLabel: "Application status",
-            statusUnconfirmed: "The document does not specify dates for the next intake",
+            statusUnconfirmed: "The next intake will begin in 2027",
             deadlineLabel: "Application deadline",
-            deadlinePending: "No official date announced",
+            deadlinePending: "June 2027",
             benefitsLabel: "Program benefits",
             benefitsPending: "Monthly scholarship; a new community; networking; events; experience; development; a united and supportive environment.",
             benefitScholarship: "Monthly scholarship",
@@ -579,23 +586,18 @@
             cohortSecondDescription: "The document describes the second cohort as a “new beginning.”",
             cohortParticipants: "Students",
             cohortRecipients: "Scholarship recipients",
-            cohortVolunteers: "Volunteers",
             cohortMonthlyScholarship: "Monthly scholarship",
             scholarsEyebrow: "Our community",
             scholarsTitle: "Scholars",
             scholarsText: "The PDF states that cohort 2 had 30 scholarship recipients. Individual profiles are not included in the document.",
             allScholars: "All scholars",
             storiesEyebrow: "Stories",
-            storiesTitle: "Meaningful change starts with people",
-            storiesText: "Real stories will be shared with the subjects' consent. No stories are ready for publication yet.",
+            storiesTitle: "Meet the second cohort",
+            storiesText: "On October 3, 2026, the Iz Kaltyr scholarship program held a welcome event for its second cohort and awarded scholarships.",
             sponsorsEyebrow: "Partnership",
             sponsorsTitle: "Opening doors to learning, together",
-            sponsorsText: "Official partner information will be published once verified.",
+            sponsorsText: "Information about official partners.",
             becomePartner: "Become a partner",
-            volunteerEyebrow: "Join the community",
-            volunteerTitle: "Share your time and skills",
-            volunteerText: "Volunteer opportunities will be listed once confirmed by the organization.",
-            becomeVolunteer: "Become a volunteer",
             newsEyebrow: "News and events",
             newsTitle: "Latest updates",
             newsText: "Project updates and announcements.",
@@ -622,6 +624,15 @@
             galleryMoments: "Special moments",
             galleryOpen: "Enlarge photo",
             galleryClose: "Close",
+            galleryEmpty: "No photos have been added to the gallery yet.",
+            galleryUploadTitle: "Add photos to the gallery",
+            galleryUploadText: "Select multiple photos and preview them before uploading.",
+            gallerySelectPhotos: "Choose photos",
+            galleryPreviewReady: "{count} photos ready to preview.",
+            galleryNoSelection: "No photos selected yet.",
+            galleryInvalidImage: "Please select image files only.",
+            galleryUploadUnavailable: "Secure administrator sign-in and server storage are not configured. Uploads are currently disabled.",
+            galleryUploadButton: "Upload photos",
             eventsEyebrow: "Iz Kaltyr project",
             eventsTitle: "Events",
             eventsText: "Upcoming and past project events.",
@@ -635,7 +646,7 @@
             eventDetails: "About this event",
             faqEyebrow: "Frequently asked questions",
             faqTitle: "Have a question?",
-            faqDraft: "Answers are based on the project information in the PDF.",
+            faqDraft: "Answers are based on the project's official regulations and terms.",
             faqQ1: "Who does the project support?",
             faqA1: "Students who are eager to learn, active, and committed to self-development. Exact selection criteria are not specified in the document.",
             faqQ2: "What is the scholarship amount?",
@@ -646,28 +657,26 @@
             faqA4: "The PDF does not specify the next intake dates, application process, selection stages, or required documents.",
             contactEyebrow: "Contact",
             contactTitle: "Get in touch",
-            contactText: "Official contact details will be added when provided by the organization.",
+            contactText: "To learn more about the project or ask a question, use the contact details below or send us a message through the form.",
             emailLabel: "Email",
-            emailPlaceholder: "[Official email]",
+            emailPlaceholder: "[info@izkaltyr.kg or another email address]",
             phoneLabel: "Phone",
-            phonePlaceholder: "[Phone number]",
+            phonePlaceholder: "[in the format +996 (XX) XXX-XXX]",
             addressLabel: "Address",
-            addressPlaceholder: "[Office address]",
-            socialPlaceholder: "Official social links will be added later.",
+            addressPlaceholder: "[Bishkek, ... Street]",
             contactFormTitle: "Send us a message",
             nameLabel: "Your name",
             emailField: "Email address",
             messageLabel: "Message",
             sendMessage: "Send message",
-            volunteerFormTitle: "I'm interested in volunteering",
             partnerFormTitle: "Let's discuss a partnership",
             organizationLabel: "Organization / company",
             interestLabel: "Briefly describe your interest",
             submitInterest: "Submit inquiry",
             emptyScholars: "No scholar profiles have been published yet.",
-            emptySponsors: "No official partners have been listed yet.",
             emptyTeam: "Verified team information has not been added yet.",
-            emptyVolunteers: "Volunteer information has not been published yet.",
+            teamPhotoCaption: "The Iz Kaltyr team",
+            teamPhotoAlt: "Members of the Iz Kaltyr team at a group meeting",
             emptyNews: "No news articles have been published yet.",
             emptyStories: "No stories have been published yet.",
             emptyEvents: "Event details will be shared later.",
@@ -721,6 +730,7 @@
             formMessageRequired: "Please enter a message.",
             formOrganizationRequired: "Please enter your organization name.",
             formInterestRequired: "Please briefly describe your interest.",
+            formDemoNotice: "Demo form: your details are validated but not sent or saved. A server service is required for real submissions.",
             formSubmissionBlocked: "Form validation failed. Your information was not submitted.",
             honeypotLabel: "Leave this field empty"
         }
@@ -728,12 +738,12 @@
 
     const data = window.SITE_DATA;
     const app = document.getElementById("app");
-    const navKeys = ["home", "about", "scholarship", "team", "leadership", "scholars", "gallery", "events", "volunteers", "sponsors", "news", "contact"];
-    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients", "volunteers"];
+    const navKeys = ["home", "about", "scholarship", "team", "leadership", "scholars", "gallery", "events", "sponsors", "news", "contact"];
+    const statKeys = ["totalStudents", "firstCohort", "secondCohort", "scholarshipRecipients", "featuredStudents"];
     const benefitKeys = ["benefitScholarship", "benefitNewEnvironment", "benefitNetworking", "benefitEvents", "benefitExperience", "benefitDevelopment", "benefitCommunity"];
     const responsibilityKeys = ["responsibilityParticipation", "responsibilityCommitment", "responsibilityInitiative", "responsibilityGrowth", "responsibilityTeamwork"];
     const state = {
-        language: localStorage.getItem("iz-kaltyr-language") || "ky",
+        language: getSavedLanguage(),
         menuOpen: false,
         studentQuery: "",
         studentCohort: "",
@@ -743,7 +753,8 @@
         scholarField: "",
         newsQuery: "",
         newsCategory: "",
-        galleryCategory: ""
+        galleryCategory: "",
+        galleryPreviewUrls: []
     };
 
     if (!translations[state.language]) {
@@ -752,6 +763,16 @@
 
     function t(key) {
         return translations[state.language][key] || translations.ky[key] || key;
+    }
+
+    function getSavedLanguage() {
+        try {
+            return window.localStorage.getItem("iz-kaltyr-language") || "ky";
+        } catch (error) {
+            if (!(error instanceof DOMException)) throw error;
+            console.error("Could not read the selected language from local storage.", error);
+            return "ky";
+        }
     }
 
     function escapeHtml(value) {
@@ -795,7 +816,6 @@
     function header() {
         const navItems = navKeys.map((key) => `<a href="#${key}"${getRoute() === key ? ' aria-current="page"' : ""}>${t(key)}</a>`).join("");
         return `
-            <div class="demo-banner" role="note">${t("demoBanner")}</div>
             <header class="site-header">
               <div class="container header-inner">
                 ${link("home", '<img class="brand-logo" src="public/images/logo.jpeg" alt=""><span>Из Калтыр</span>', "brand")}
@@ -835,7 +855,6 @@
                 <li>${link("gallery", t("gallery"))}</li>
                 <li>${link("events", t("events"))}</li>
                 <li>${link("news", t("news"))}</li>
-                <li>${link("volunteers", t("volunteers"))}</li>
                 <li>${link("sponsors", t("sponsors"))}</li>
               </ul></div>
               <div><h2>${t("contact")}</h2><ul>
@@ -846,7 +865,6 @@
             </div>
             <div class="container footer-bottom">
               <span>© ${new Date().getFullYear()} Из Калтыр. ${t("copyright")}</span>
-              <span>${t("socialPlaceholder")}</span>
               <label class="footer-language"><span class="visually-hidden">${t("languageLabel")}</span><select id="footer-language-select" aria-label="${t("languageLabel")}">
                 ${["ky", "ru", "en"].map((language) => `<option value="${language}"${state.language === language ? " selected" : ""}>${translations[language].languageName}</option>`).join("")}
               </select></label>
@@ -898,8 +916,6 @@
           ${leadershipSection()}
           ${scholarsPreview()}
           ${storiesSection()}
-          ${sponsorsSection()}
-          ${volunteerCallout()}
           ${newsPreview()}
           ${faqSection()}
           ${contactSection()}`;
@@ -907,7 +923,10 @@
 
     function aboutPreview() {
         return `<section class="section"><div class="container about-grid">
-          <div class="about-visual"><div class="about-visual-inner"><span class="visual-letter" aria-hidden="true">И</span><span class="visual-caption">${t("valuesText")}</span></div></div>
+          <figure class="about-visual"><div class="about-visual-inner">
+            <div class="visual-quote-content"><p class="visual-kicker">${t("scholarQuoteLabel")}</p><blockquote class="visual-quote">${t("scholarQuote")}</blockquote></div>
+            <figcaption class="visual-caption">${t("valuesText")}</figcaption>
+          </div></figure>
           <div class="about-copy"><p class="eyebrow">${t("aboutEyebrow")}</p><h2>${t("aboutTitle")}</h2><p class="lead">${t("aboutText")}</p>
             <div class="values-grid">
               <div><h3>${t("missionLabel")}</h3><p>${t("missionDraft")}</p></div>
@@ -939,7 +958,6 @@
                 [t("cohortMonthlyScholarship"), `${cohort.monthlyScholarship.toLocaleString(state.language)} сом`]
             ];
             if (cohort.scholarshipRecipients) details.push([t("cohortRecipients"), cohort.scholarshipRecipients]);
-            if (cohort.volunteers) details.push([t("cohortVolunteers"), cohort.volunteers]);
             return `<article class="cohort-card"><p class="eyebrow">${t(cohort.id === "first" ? "cohortFirstTitle" : "cohortSecondTitle")}</p><h3>${t(cohort.id === "first" ? "cohortFirstTitle" : "cohortSecondTitle")}</h3><p>${t(cohort.id === "first" ? "cohortFirstDescription" : "cohortSecondDescription")}</p><dl>${details.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("")}</dl></article>`;
           }).join("")}</div>
         </div></section>`;
@@ -967,50 +985,6 @@
         </div></section>`;
     }
 
-    function sponsorCards() {
-        const sponsors = data.records.sponsors.filter((sponsor) => sponsor.visible && !sponsor.deleted);
-        if (!sponsors.length) return emptyState("emptySponsors", "✳");
-        return `<div class="card-grid">${sponsors.map((sponsor) => {
-            const logo = externalUrl(sponsor.logo);
-            const website = externalUrl(sponsor.website);
-            const name = recordText(sponsor, "name");
-            const displayWebsite = website ? new URL(website).host : "";
-            return `<article class="partner-card">${logo ? `<img src="${escapeHtml(logo)}" alt="${escapeHtml(name)} logo" loading="lazy">` : `<div class="partner-placeholder" aria-hidden="true">${escapeHtml(name.slice(0, 1))}</div>`}<h3>${escapeHtml(name)}</h3><p>${escapeHtml(recordText(sponsor, "description"))}</p>${website ? `<a class="text-link" href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayWebsite)} <span aria-hidden="true">↗</span></a>` : ""}</article>`;
-        }).join("")}</div>`;
-    }
-
-    function sponsorsSection() {
-        return `<section class="section"><div class="container">
-          <div class="section-heading section-heading-row"><div><p class="eyebrow">${t("sponsorsEyebrow")}</p><h2>${t("sponsorsTitle")}</h2></div><p>${t("sponsorsText")}</p></div>
-          ${sponsorCards()}${link("sponsors#partner-form-section", t("becomePartner"), "button button-outline")}
-        </div></section>`;
-    }
-
-    function eventsList() {
-        const events = data.records.events.filter((event) => event.published && !event.deleted);
-        return events.length ? eventsMarkup(events) : "";
-    }
-
-    function volunteerCards() {
-        const volunteers = data.records.volunteers.filter((volunteer) => volunteer.active && !volunteer.deleted);
-        if (!volunteers.length) return emptyState("emptyVolunteers", "✳");
-        return `<div class="card-grid">${volunteers.map((volunteer) => {
-            const photo = externalUrl(volunteer.photo);
-            const name = recordText(volunteer, "name");
-            const image = photo
-                ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(volunteer, "photoAlt") || name)}" loading="lazy" decoding="async">`
-                : `<div class="person-placeholder" aria-hidden="true">И</div>`;
-            return `<article class="person-card">${image}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(volunteer, "position"))}</p><p>${escapeHtml(recordText(volunteer, "biography"))}</p></article>`;
-        }).join("")}</div>`;
-    }
-
-    function volunteerCallout() {
-        return `<section class="callout"><div class="container callout-inner">
-          <div><p class="eyebrow eyebrow-light">${t("volunteerEyebrow")}</p><h2>${t("volunteerTitle")}</h2><p>${t("volunteerText")}</p></div>
-          ${link("volunteers#volunteer-form-section", t("becomeVolunteer"), "button button-orange")}
-        </div></section>`;
-    }
-
     function newsPreview() {
         const articles = data.records.articles.filter((article) => article.published && !article.deleted);
         if (!articles.length) return "";
@@ -1032,24 +1006,22 @@
           <div><span class="detail-label">${t("emailLabel")}</span><p>${t("emailPlaceholder")}</p></div>
           <div><span class="detail-label">${t("phoneLabel")}</span><p>${t("phonePlaceholder")}</p></div>
           <div><span class="detail-label">${t("addressLabel")}</span><p>${t("addressPlaceholder")}</p></div>
-          <p class="muted-text">${t("socialPlaceholder")}</p>
         </div>`;
     }
 
     function contactForm(type, titleKey) {
         const partnerFields = type === "partner";
-        const volunteerForm = type === "volunteer";
-        const submitKey = partnerFields || volunteerForm ? "submitInterest" : "sendMessage";
+        const submitKey = partnerFields ? "submitInterest" : "sendMessage";
         const formId = `${type}-form`;
         return `<form class="site-form" id="${formId}" data-demo-form="${type}" novalidate>
           <h2>${t(titleKey)}</h2>
           <label>${t("nameLabel")}<input name="name" type="text" autocomplete="name" required aria-describedby="${formId}-name-error"><span class="field-error" id="${formId}-name-error" data-error-for="name"></span></label>
           <label>${t("emailField")}<input name="email" type="email" autocomplete="email" required aria-describedby="${formId}-email-error"><span class="field-error" id="${formId}-email-error" data-error-for="email"></span></label>
           ${partnerFields ? `<label>${t("organizationLabel")}<input name="organization" type="text" required aria-describedby="${formId}-organization-error"><span class="field-error" id="${formId}-organization-error" data-error-for="organization"></span></label>` : ""}
-          <label>${t(partnerFields || volunteerForm ? "interestLabel" : "messageLabel")}<textarea name="message" rows="4" required aria-describedby="${formId}-message-error"></textarea><span class="field-error" id="${formId}-message-error" data-error-for="message"></span></label>
+          <label>${t(partnerFields ? "interestLabel" : "messageLabel")}<textarea name="message" rows="4" required aria-describedby="${formId}-message-error"></textarea><span class="field-error" id="${formId}-message-error" data-error-for="message"></span></label>
           <label class="honeypot" aria-hidden="true">${t("honeypotLabel")}<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
           <button class="button button-orange" type="submit">${t(submitKey)}</button>
-          <p class="form-status" role="status" aria-live="polite">${t("formDemoNotice")}</p>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
         </form>`;
     }
 
@@ -1057,7 +1029,7 @@
         return `<section class="section section-muted"><div class="container contact-layout">
           <div><p class="eyebrow">${t("contactEyebrow")}</p><h2>${t("contactTitle")}</h2><p class="lead">${t("contactText")}</p>${contactDetails()}</div>
           ${contactForm("contact", "contactFormTitle")}
-        </div></secion>`;
+        </div></section>`;
     }
 
     function directorProfileSection() {
@@ -1126,15 +1098,26 @@
               </div>`
             : "";
         const gallery = photos.length
-            ? `<section class="section"><div class="container">${filters}<div id="gallery-results">${galleryMarkup(photos)}</div>
+            ? `${filters}<div id="gallery-results">${galleryMarkup(photos)}</div>
                 <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="${t("galleryTitle")}">
                   <button class="gallery-lightbox-close" type="button" aria-label="${t("galleryClose")}">×</button>
                   <img class="gallery-lightbox-image" alt="">
                   <div class="gallery-lightbox-caption"><p></p><time></time></div>
-                </dialog>
-              </div></section>`
-            : "";
-        return `${pageIntro("galleryEyebrow", "galleryTitle", "galleryText")}${gallery}`;
+                </dialog>`
+            : emptyState("galleryEmpty", "✳");
+        return `${pageIntro("galleryEyebrow", "galleryTitle", "galleryText")}
+          <section class="section"><div class="container gallery-page-content">
+            ${gallery}
+            <section class="gallery-upload-panel" aria-labelledby="gallery-upload-title">
+              <h2 id="gallery-upload-title">${t("galleryUploadTitle")}</h2>
+              <p>${t("galleryUploadText")}</p>
+              <label class="gallery-upload-field">${t("gallerySelectPhotos")}<input id="gallery-upload-input" type="file" accept="image/*" multiple aria-describedby="gallery-upload-status"></label>
+              <div id="gallery-upload-previews" class="gallery-upload-previews"></div>
+              <p id="gallery-upload-status" class="form-status" role="status" aria-live="polite">${t("galleryNoSelection")}</p>
+              <p class="muted-text">${t("galleryUploadUnavailable")}</p>
+              <button class="button button-orange" type="button" data-gallery-upload disabled>${t("galleryUploadButton")}</button>
+            </section>
+          </div></section>`;
     }
 
     function galleryMarkup(photos) {
@@ -1221,7 +1204,7 @@
                 const name = recordText(member, "name");
                 return `<article class="person-card">${photo ? `<img class="profile-image" src="${escapeHtml(photo)}" alt="${escapeHtml(recordText(member, "photoAlt") || `${name} — ${recordText(member, "position")}`)}" loading="lazy" decoding="async">` : `<div class="person-placeholder" aria-hidden="true">И</div>`}<h3>${escapeHtml(name)}</h3><p class="eyebrow">${escapeHtml(recordText(member, "position"))}</p><p>${escapeHtml(recordText(member, "biography"))}</p></article>`;
             }).join("")}</div>`
-            : emptyState("emptyTeam", "✳");
+            : `<figure class="team-photo"><img src="public/images/team-photo.jpeg" alt="${t("teamPhotoAlt")}" loading="lazy" decoding="async"><figcaption>${t("teamPhotoCaption")}</figcaption></figure>`;
         return `<section class="section section-muted"><div class="container"><div class="section-heading"><p class="eyebrow">${t("team")}</p><h2>${t("team")}</h2></div>${profiles}</div></section>`;
     }
 
@@ -1326,24 +1309,14 @@
         }).join("")}</div>`;
     }
 
-    function volunteersPage() {
-        return `${pageIntro("volunteerEyebrow", "volunteerTitle", "volunteerText")}
-          <section class="section section-muted"><div class="container split-layout">
-            <div><h2>${t("volunteers")}</h2>${volunteerCards()}<h2>${t("statEvents")}</h2>${eventsList()}</div>
-            <div id="volunteer-form-section">${contactForm("volunteer", "volunteerFormTitle")}</div>
-          </div></section>`;
-    }
-
     function sponsorsPage() {
         return `${pageIntro("sponsorsEyebrow", "sponsorsTitle", "sponsorsText")}
-          <section class="section"><div class="container"><h2>${t("sponsors")}</h2>${sponsorCards()}</div></section>
-          <section class="section section-muted"><div class="container contact-layout"><div><p class="eyebrow">${t("becomePartner")}</p><h2>${t("partnerFormTitle")}</h2><p class="lead">${t("sponsorsText")}</p></div><div id="partner-form-section">${contactForm("partner", "partnerFormTitle")}</div></div></section>`;
+          <section class="section section-muted"><div class="container"><div id="partner-form-section" class="partner-inquiry">${contactForm("partner", "partnerFormTitle")}</div></div></section>`;
     }
 
     function contactPage() {
         return `${pageIntro("contactEyebrow", "contactTitle", "contactText")}
-          <section class="section section-muted"><div class="container contact-layout">${contactDetails()}${contactForm("contact", "contactFormTitle")}</div></section>
-          <section class="section"><div class="container"><h2>${t("addressLabel")}</h2><div class="map-placeholder">${t("addressPlaceholder")}</div></div></section>`;
+          <section class="section section-muted"><div class="container contact-layout">${contactDetails()}${contactForm("contact", "contactFormTitle")}</div></section>`;
     }
 
     function legalPage(titleKey) {
@@ -1363,7 +1336,6 @@
         if (route === "scholars") return directoryPage();
         if (route === "gallery") return galleryPage();
         if (route === "events") return eventsPage();
-        if (route === "volunteers") return volunteersPage();
         if (route === "sponsors") return sponsorsPage();
         if (route === "sponsors#partner-form") return sponsorsPage();
         if (route === "news") return newsPage();
@@ -1423,11 +1395,16 @@
     }
 
     function render() {
+        state.galleryPreviewUrls.forEach((url) => URL.revokeObjectURL(url));
+        state.galleryPreviewUrls = [];
         const route = getRoute();
         app.innerHTML = shell(routeContent(route));
         document.documentElement.lang = state.language;
         document.querySelector(".skip-link").textContent = t("skipLink");
-        document.title = `${route === "home" ? t("homeTitle") : t(navKeys.includes(route) ? route : "notFoundTitle")} — Из Калтыр`;
+        const titleKey = route === "home"
+            ? "homeTitle"
+            : ({ privacy: "privacyTitle", terms: "termsTitle", admin: "adminTitle", sponsors: "sponsorsTitle" })[route] || (navKeys.includes(route) ? route : "notFoundTitle");
+        document.title = `${t(titleKey)} — Из Калтыр`;
         document.querySelector('meta[name="description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:title"]').content = `${t("homeTitle")} — Из Калтыр`;
@@ -1540,6 +1517,28 @@
             });
         }
 
+        const galleryUploadInput = document.getElementById("gallery-upload-input");
+        if (galleryUploadInput) {
+            galleryUploadInput.addEventListener("change", () => {
+                state.galleryPreviewUrls.forEach((url) => URL.revokeObjectURL(url));
+                state.galleryPreviewUrls = [];
+                const files = [...galleryUploadInput.files];
+                const validFiles = files.filter((file) => file.type.startsWith("image/"));
+                const previews = document.getElementById("gallery-upload-previews");
+                const status = document.getElementById("gallery-upload-status");
+                previews.innerHTML = validFiles.map((file) => {
+                    const imageUrl = URL.createObjectURL(file);
+                    state.galleryPreviewUrls.push(imageUrl);
+                    return `<figure class="gallery-upload-preview"><img src="${imageUrl}" alt="${escapeHtml(file.name)}"><figcaption>${escapeHtml(file.name)}</figcaption></figure>`;
+                }).join("");
+                status.textContent = validFiles.length !== files.length
+                    ? t("galleryInvalidImage")
+                    : validFiles.length
+                        ? t("galleryPreviewReady").replace("{count}", String(validFiles.length))
+                        : t("galleryNoSelection");
+            });
+        }
+
         const studentSearch = document.getElementById("student-search");
         if (studentSearch) {
             const updateStudentResults = () => {
@@ -1601,13 +1600,14 @@
         const values = Object.fromEntries(formData.entries());
         const errors = {};
         const status = form.querySelector(".form-status");
+        status.hidden = false;
         if (String(values.website || "").trim()) {
             status.textContent = t("formSubmissionBlocked");
             return;
         }
         if (!String(values.name || "").trim()) errors.name = t("formNameRequired");
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(values.email || "").trim())) errors.email = t("formEmailRequired");
-        if (!String(values.message || "").trim()) errors.message = form.dataset.demoForm === "partner" || form.dataset.demoForm === "volunteer" ? t("formInterestRequired") : t("formMessageRequired");
+        if (!String(values.message || "").trim()) errors.message = form.dataset.demoForm === "partner" ? t("formInterestRequired") : t("formMessageRequired");
         if (form.dataset.demoForm === "partner" && !String(values.organization || "").trim()) errors.organization = t("formOrganizationRequired");
 
         Object.entries(errors).forEach(([fieldName, message]) => {
