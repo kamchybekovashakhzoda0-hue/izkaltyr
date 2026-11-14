@@ -1390,6 +1390,47 @@ h3 {
   flex-direction: column;
 }
 
+.news-card-content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.news-card--featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 28px;
+  min-height: 0;
+}
+
+.news-poster-link {
+  display: block;
+  min-width: 0;
+  background: var(--surface);
+}
+
+.poster-unavailable {
+  display: grid;
+  min-height: 320px;
+  padding: 28px;
+  place-items: center;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  background: var(--surface);
+  text-align: center;
+  font-weight: 700;
+}
+
+.news-card--featured .news-poster-link .card-image {
+  height: auto;
+  max-height: 560px;
+  margin: 0;
+  object-fit: contain;
+}
+
 .news-card h2 {
   font-size: 1.45rem;
 }
@@ -1414,6 +1455,21 @@ h3 {
   align-self: flex-start;
   margin-top: 12px;
   font-weight: 800;
+}
+
+.news-card .button {
+  align-self: flex-start;
+  margin-top: 16px;
+}
+
+.article-poster-link {
+  display: block;
+}
+
+.article-poster {
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
 }
 
 .event-grid {
@@ -1809,8 +1865,21 @@ h3 {
   .scholarship-detail-layout,
   .contact-layout,
   .split-layout,
-  .faq-layout {
+  .faq-layout,
+  .news-card--featured {
     grid-template-columns: 1fr;
+  }
+
+  .news-card--featured {
+    gap: 20px;
+  }
+
+  .news-card--featured .news-poster-link .card-image {
+    max-height: 460px;
+  }
+
+  .poster-unavailable {
+    min-height: 240px;
   }
 
   .director-profile {

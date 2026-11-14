@@ -150,6 +150,7 @@
             galleryEducation: "Билим берүү иш-чаралары",
             galleryMoments: "Өзгөчө көз ирмемдер",
             galleryOpen: "Сүрөттү чоңойтуу",
+            posterPending: "Расмий иш-чара афишасы жүктөлө элек.",
             galleryClose: "Жабуу",
             galleryEmpty: "Азырынча галереяга сүрөт кошула элек.",
             eventsEyebrow: "Из Калтыр долбоору",
@@ -364,6 +365,7 @@
             galleryEducation: "Образовательные мероприятия",
             galleryMoments: "Особые моменты",
             galleryOpen: "Открыть фотографию",
+            posterPending: "Официальная афиша мероприятия ещё не добавлена.",
             galleryClose: "Закрыть",
             galleryEmpty: "В галерею пока не добавлены фотографии.",
             eventsEyebrow: "Проект «Из Калтыр»",
@@ -597,6 +599,7 @@
             galleryEducation: "Educational activities",
             galleryMoments: "Special moments",
             galleryOpen: "Enlarge photo",
+            posterPending: "The official event poster has not been added yet.",
             galleryClose: "Close",
             galleryEmpty: "No photos have been added to the gallery yet.",
             eventsEyebrow: "Iz Kaltyr project",
@@ -1100,6 +1103,10 @@
         if (!value) return "";
         const date = new Date(value.length === 10 ? `${value}T00:00:00` : value);
         if (Number.isNaN(date.getTime())) return value;
+        if (state.language === "ky") {
+            const months = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
+            return `${date.getDate()}-${months[date.getMonth()]} ${date.getFullYear()}`;
+        }
         return new Intl.DateTimeFormat(state.language, { dateStyle: "long" }).format(date);
     }
 
@@ -1261,7 +1268,14 @@
             const image = externalUrl(article.image);
             const title = recordText(article, "title");
             const date = recordText(article, "date");
-            return `<article class="news-card">${image ? `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">` : ""}<p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h2>${link(`article/${encodeURIComponent(article.id)}`, escapeHtml(title))}</h2><p>${escapeHtml(recordText(article, "excerpt"))}</p><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${link(`article/${encodeURIComponent(article.id)}`, t("readMore"), "text-link")}</article>`;
+            const poster = image && article.poster;
+            const imageMarkup = image
+                ? poster
+                    ? `<a class="news-poster-link" href="${escapeHtml(image)}" target="_blank" rel="noopener" aria-label="${escapeHtml(`${t("galleryOpen")}: ${title}`)}"><img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async"></a>`
+                    : `<img class="card-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">`
+                : article.poster ? `<div class="poster-unavailable">${escapeHtml(t("posterPending"))}</div>` : "";
+            const actionLabel = recordText(article, "actionLabel") || t("readMore");
+            return `<article class="news-card${article.featured ? " news-card--featured" : ""}">${imageMarkup}<div class="news-card-content"><p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h2>${link(`article/${encodeURIComponent(article.id)}`, escapeHtml(title))}</h2><p>${escapeHtml(recordText(article, "excerpt"))}</p><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${link(`article/${encodeURIComponent(article.id)}`, escapeHtml(actionLabel), "button button-orange button-small")}</div></article>`;
         }).join("")}</div>`;
     }
 
@@ -1338,7 +1352,12 @@
                 const title = recordText(article, "title");
                 const date = recordText(article, "date");
                 const body = recordText(article, "body") || recordText(article, "excerpt");
-                return `${pageIntro("newsEyebrow", "newsTitle", "newsText")}<section class="section"><article class="container article-body"><p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h1>${escapeHtml(title)}</h1><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${image ? `<img class="article-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">` : ""}<div class="article-copy">${body.split(/\n+/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>${link("news", t("backToNews"), "text-link")}</article></section>`;
+                const imageMarkup = image
+                    ? article.poster
+                        ? `<a class="article-poster-link" href="${escapeHtml(image)}" target="_blank" rel="noopener" aria-label="${escapeHtml(`${t("galleryOpen")}: ${title}`)}"><img class="article-image article-poster" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async"></a>`
+                        : `<img class="article-image" src="${escapeHtml(image)}" alt="${escapeHtml(recordText(article, "imageAlt") || title)}" loading="lazy" decoding="async">`
+                    : article.poster ? `<div class="poster-unavailable">${escapeHtml(t("posterPending"))}</div>` : "";
+                return `${pageIntro("newsEyebrow", "newsTitle", "newsText")}<section class="section"><article class="container article-body"><p class="eyebrow">${escapeHtml(recordText(article, "category"))}</p><h1>${escapeHtml(title)}</h1><time datetime="${escapeHtml(date)}">${escapeHtml(formatContentDate(date))}</time>${imageMarkup}<div class="article-copy">${body.split(/\n+/).filter(Boolean).map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>${link("news", t("backToNews"), "text-link")}</article></section>`;
             }
             return `${pageIntro("newsEyebrow", "articleMissing", "articleMissing")}<section class="section"><div class="container">${link("news", t("backToNews"), "button button-outline")}</div></section>`;
         }
@@ -1355,10 +1374,13 @@
         app.innerHTML = shell(routeContent(route));
         document.documentElement.lang = state.language;
         document.querySelector(".skip-link").textContent = t("skipLink");
+        const newsArticle = route.startsWith("article/")
+            ? data.records.articles.find((record) => record.id === route.slice("article/".length) && record.published && !record.deleted)
+            : null;
         const titleKey = route === "home"
             ? "homeTitle"
             : ({ privacy: "privacyTitle", terms: "termsTitle", admin: "adminTitle", sponsors: "sponsorsTitle" })[route] || (navKeys.includes(route) ? route : "notFoundTitle");
-        document.title = `${t(titleKey)} — Из Калтыр`;
+        document.title = `${newsArticle ? recordText(newsArticle, "title") : t(titleKey)} — Из Калтыр`;
         document.querySelector('meta[name="description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:description"]').content = t("metaDescription");
         document.querySelector('meta[property="og:title"]').content = `${t("homeTitle")} — Из Калтыр`;
